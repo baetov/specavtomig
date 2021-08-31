@@ -1,0 +1,1042 @@
+2021-04-21 16:46:03 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Client::pass in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('pass')
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\helpers\BaseHtml.php(2244): yii\db\BaseActiveRecord->__get('pass')
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\helpers\BaseHtml.php(1363): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Client), 'pass')
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\helpers\BaseHtml.php(1417): yii\helpers\BaseHtml::activeInput('text', Object(app\models\Client), 'pass', Array)
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\widgets\ActiveField.php(407): yii\helpers\BaseHtml::activeTextInput(Object(app\models\Client), 'pass', Array)
+#5 D:\OS\OSPanel\domains\avtomig.local\views\client\_form.php(39): yii\widgets\ActiveField->textInput(Array)
+#6 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OS\\OSPanel\\d...')
+#7 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OS\\OSPanel\\d...', Array)
+#8 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OS\\OSPanel\\d...', Array, NULL)
+#9 D:\OS\OSPanel\domains\avtomig.local\views\client\create.php(12): yii\base\View->render('_form', Array)
+#10 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OS\\OSPanel\\d...')
+#11 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OS\\OSPanel\\d...', Array)
+#12 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\View.php(213): yii\base\View->renderFile('D:\\OS\\OSPanel\\d...', Array, Object(app\controllers\ClientController))
+#13 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Controller.php(53): yii\web\View->renderAjax('create', Array, Object(app\controllers\ClientController))
+#14 D:\OS\OSPanel\domains\avtomig.local\controllers\ClientController.php(96): yii\web\Controller->renderAjax('create', Array)
+#15 [internal function]: app\controllers\ClientController->actionCreate()
+#16 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#18 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#19 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('client/create', Array)
+#20 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#22 {main}
+2021-04-21 16:46:03 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = [
+    '_' => '1619012676929'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.1370553183.1619011512'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'zU6NFGKuAHDOUZabs2LdTCirhffJo6kqz4L1cEVWWlKqI985B_5zMqcZ17bfIK0LQJjvkrPUwXCL5cYKfSMoDQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 OPR/75.0.3969.171'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://avtomig/client'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.1370553183.1619011512'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '54803'
+    'REDIRECT_URL' => '/client/create'
+    'REDIRECT_QUERY_STRING' => '_=1619012676929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_=1619012676929'
+    'REQUEST_URI' => '/client/create?_=1619012676929'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1619012763.594
+    'REQUEST_TIME' => 1619012763
+    'argv' => [
+        0 => '_=1619012676929'
+    ]
+    'argc' => 1
+]
+2021-04-21 16:59:07 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "deal/create". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('deal/create', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-04-21 16:59:07 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = [
+    '_' => '1619013542775'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.1370553183.1619011512'
+    '_gat' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'IPsPuuPApdM97swtwgmv8hB71KwFQ69aLaHp6q6667JHll2XhpDWkVSmjQCuS9-1eEi-yX80xwBpxtqQls-Z7Q=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 OPR/75.0.3969.171'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://avtomig/client'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.1370553183.1619011512; _gat=1'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '55159'
+    'REDIRECT_URL' => '/deal/create'
+    'REDIRECT_QUERY_STRING' => '_=1619013542775'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_=1619013542775'
+    'REQUEST_URI' => '/deal/create?_=1619013542775'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1619013547.18
+    'REQUEST_TIME' => 1619013547
+    'argv' => [
+        0 => '_=1619013542775'
+    ]
+    'argc' => 1
+]
+2021-04-21 17:06:17 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "deal/create". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('deal/create', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-04-21 17:06:17 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = [
+    '_' => '1619013542781'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.1370553183.1619011512'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'IPsPuuPApdM97swtwgmv8hB71KwFQ69aLaHp6q6667JHll2XhpDWkVSmjQCuS9-1eEi-yX80xwBpxtqQls-Z7Q=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 OPR/75.0.3969.171'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://avtomig/client'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.1370553183.1619011512'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '55217'
+    'REDIRECT_URL' => '/deal/create'
+    'REDIRECT_QUERY_STRING' => '_=1619013542781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_=1619013542781'
+    'REQUEST_URI' => '/deal/create?_=1619013542781'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1619013977.692
+    'REQUEST_TIME' => 1619013977
+    'argv' => [
+        0 => '_=1619013542781'
+    ]
+    'argc' => 1
+]
+2021-05-10 13:23:21 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "contracts". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('contracts', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-10 13:23:21 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.496763639.1620642180'
+    '_gat' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.107'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://avtomig/client'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.496763639.1620642180; _gat=1'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '54721'
+    'REDIRECT_URL' => '/contracts'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/contracts'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1620642201.179
+    'REQUEST_TIME' => 1620642201
+    'argv' => []
+    'argc' => 0
+]
+2021-05-10 13:44:31 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: migrate/creacre in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('creacre', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('creacre', Array)
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/creacre', Array)
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/creacre', Array)
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 D:\OS\OSPanel\domains\avtomig.local\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrate/creacre". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/creacre', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\yii(20): yii\base\Application->run()
+#3 {main}
+2021-05-10 13:44:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '118x32766 (118x32)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ahmad\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AHMAD-��'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x0007026A'
+    'ConEmuBaseDir' => 'D:\\os\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\OS\\OSPanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190714'
+    'ConEmuCfgDir' => 'D:\\os\\ospanel\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\os\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A0050'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x0005058C'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '12192'
+    'ConEmuServerPID' => '9180'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\os\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\os\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\os\\ospanel'
+    'LOCALAPPDATA' => 'C:\\Users\\ahmad\\AppData\\Local'
+    'LOGONSERVER' => '\\\\AHMAD-��'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ahmad\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\os\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\os\\ospanel\\modules\\conemu;D:\\os\\ospanel\\modules\\conemu\\ConEmu;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\os\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\os\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'ahmad-��'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ahmad-��'
+    'USERNAME' => 'ahmad'
+    'USERPROFILE' => 'C:\\Users\\ahmad'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\virtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1620643471.0373
+    'REQUEST_TIME' => 1620643471
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/creacre'
+        2 => 'create_technic_table'
+    ]
+    'argc' => 3
+]
+2021-05-10 14:12:51 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\TechnicType::subgroups in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('subgroups')
+#1 D:\OS\OSPanel\domains\avtomig.local\models\TechnicType.php(72): yii\db\BaseActiveRecord->__get('subgroups')
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveRecord.php(611): app\models\TechnicType->afterSave(true, Array)
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 D:\OS\OSPanel\domains\avtomig.local\controllers\TechnicTypeController.php(102): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\TechnicTypeController->actionCreate()
+#7 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#9 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#10 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic-type/cr...', Array)
+#11 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#13 {main}
+2021-05-10 14:12:51 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = [
+    '_' => '1620645130845'
+]
+
+$_POST = [
+    '_csrf' => '9OMT6Mkq1x7t-67XsfAVNyt222Aa7N5f0rRLSaU5atKTjkHFrHqkXISz7_rdsmVwQ0WxBWCbtgWW03gznUwYjQ=='
+    'TechnicType' => [
+        'name' => 'автокран'
+        'subgroups' => [
+            0 => [
+                'id' => ''
+                'name' => '25т'
+            ]
+            1 => [
+                'id' => ''
+                'name' => '32т'
+            ]
+            2 => [
+                'id' => ''
+                'name' => '25 с гуськом'
+            ]
+            3 => [
+                'id' => ''
+                'name' => '32 с гуськом'
+            ]
+        ]
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.496763639.1620642180'
+    '_gat' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '1437'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'Ijs4sJu5oHwv9CZBOKCXba2GbbIu3RjMOdXZ9CMSjG1FVmqd_unTPka8Z2xU4ucqxbUH11SqcJZ9suqOG2f-Mg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.107'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryjxL6BP1QxANKAOdw'
+    'HTTP_ORIGIN' => 'http://avtomig'
+    'HTTP_REFERER' => 'http://avtomig/technic-type'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.496763639.1620642180; _gat=1'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '64322'
+    'REDIRECT_URL' => '/technic-type/create'
+    'REDIRECT_QUERY_STRING' => '_=1620645130845'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => '_=1620645130845'
+    'REQUEST_URI' => '/technic-type/create?_=1620645130845'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1620645171.293
+    'REQUEST_TIME' => 1620645171
+    'argv' => [
+        0 => '_=1620645130845'
+    ]
+    'argc' => 1
+]
+2021-05-10 15:21:23 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "tgii". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tgii', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-05-10 15:21:23 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.496763639.1620642180'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.107'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.496763639.1620642180'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '53103'
+    'REDIRECT_URL' => '/tgii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/tgii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1620649283.41
+    'REQUEST_TIME' => 1620649283
+    'argv' => []
+    'argc' => 0
+]
+2021-05-10 15:35:19 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'work_kind' in 'where clause' in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php:1299
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php(1299): PDOStatement->execute()
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php(1165): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 D:\OS\OSPanel\domains\avtomig.local\models\WorkTypeQuery.php(23): yii\db\ActiveQuery->all(NULL)
+#6 D:\OS\OSPanel\domains\avtomig.local\models\WorkKind.php(55): app\models\WorkTypeQuery->all()
+#7 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveRecord.php(611): app\models\WorkKind->afterSave(true, Array)
+#8 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#9 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#10 D:\OS\OSPanel\domains\avtomig.local\controllers\WorkKindController.php(102): yii\db\BaseActiveRecord->save()
+#11 [internal function]: app\controllers\WorkKindController->actionCreate()
+#12 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#14 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#15 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('work-kind/creat...', Array)
+#16 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#18 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'work_kind' in 'where clause'
+The SQL being executed was: SELECT * FROM `work_type` WHERE `work_kind`=1 in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php(1304): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php(1165): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 D:\OS\OSPanel\domains\avtomig.local\models\WorkTypeQuery.php(23): yii\db\ActiveQuery->all(NULL)
+#6 D:\OS\OSPanel\domains\avtomig.local\models\WorkKind.php(55): app\models\WorkTypeQuery->all()
+#7 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveRecord.php(611): app\models\WorkKind->afterSave(true, Array)
+#8 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#9 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#10 D:\OS\OSPanel\domains\avtomig.local\controllers\WorkKindController.php(102): yii\db\BaseActiveRecord->save()
+#11 [internal function]: app\controllers\WorkKindController->actionCreate()
+#12 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#14 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#15 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('work-kind/creat...', Array)
+#16 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\OS\OSPanel\domains\avtomig.local\web\index.php(19): yii\base\Application->run()
+#18 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'work_kind' in 'where clause'
+)
+
+2021-05-10 15:35:19 [127.0.0.1][1][g3iipsn067bqjjaqsf54hbheubaviq6k][info][application] $_GET = [
+    '_' => '1620649811387'
+]
+
+$_POST = [
+    '_csrf' => 'VulriGpACyT2LXUihY0BGtKQK2FFJzYRimEIR1zCmF0xhDmlDxB4Zp9lNA_pz3FduqNBBD9QXkvOBjs9ZLfqAg=='
+    'WorkKind' => [
+        'name' => 'вид рабоот1'
+        'workTypes' => [
+            0 => [
+                'id' => ''
+                'name' => 'подъем '
+            ]
+            1 => [
+                'id' => ''
+                'name' => 'спуск'
+            ]
+        ]
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g3iipsn067bqjjaqsf54hbheubaviq6k'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_\";}'
+    '_ga' => 'GA1.1.1878467211.1618480484'
+    '_gid' => 'GA1.1.496763639.1620642180'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '930'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'y1hj5lgWF5jrkUzgFDUB2-n0AM2GpJquZ4GXdK5OjjmsNTHLPUZk2oLZDc14d3GcgcdqqPzT8vQj5qQOljv8Zg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.107'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarygjS0VYKQA7Kuvlej'
+    'HTTP_ORIGIN' => 'http://avtomig'
+    'HTTP_REFERER' => 'http://avtomig/work-kind'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g3iipsn067bqjjaqsf54hbheubaviq6k; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=01d03d3081d0756a963d2af42ee302e525179c03fe48f4a10894877f52cb6daba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gmR-ePsBiHA-lBpGh3jezwhZDg3z8ur_%22%3B%7D; _ga=GA1.1.1878467211.1618480484; _gid=GA1.1.496763639.1620642180'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/web/index.php'
+    'REMOTE_PORT' => '53211'
+    'REDIRECT_URL' => '/work-kind/create'
+    'REDIRECT_QUERY_STRING' => '_=1620649811387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => '_=1620649811387'
+    'REQUEST_URI' => '/work-kind/create?_=1620649811387'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1620650119.262
+    'REQUEST_TIME' => 1620650119
+    'argv' => [
+        0 => '_=1620649811387'
+    ]
+    'argc' => 1
+]
+2021-05-14 15:19:56 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: migrate/cerate in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('cerate', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('cerate', Array)
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/cerate', Array)
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/cerate', Array)
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 D:\OS\OSPanel\domains\avtomig.local\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrate/cerate". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/cerate', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\yii(20): yii\base\Application->run()
+#3 {main}
+2021-05-14 15:19:55 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '118x32766 (118x32)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ahmad\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AHMAD-��'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00080036'
+    'ConEmuBaseDir' => 'D:\\os\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\OS\\OSPanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190714'
+    'ConEmuCfgDir' => 'D:\\os\\ospanel\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\os\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0005036A'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00090378'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '10808'
+    'ConEmuServerPID' => '11004'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\os\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\os\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\os\\ospanel'
+    'LOCALAPPDATA' => 'C:\\Users\\ahmad\\AppData\\Local'
+    'LOGONSERVER' => '\\\\AHMAD-��'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ahmad\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\os\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\os\\ospanel\\modules\\conemu;D:\\os\\ospanel\\modules\\conemu\\ConEmu;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\os\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\os\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'ahmad-��'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ahmad-��'
+    'USERNAME' => 'ahmad'
+    'USERPROFILE' => 'C:\\Users\\ahmad'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\virtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1620994794.8464
+    'REQUEST_TIME' => 1620994794
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/cerate'
+        2 => 'create_bid_table'
+    ]
+    'argc' => 3
+]
+2021-07-16 16:51:11 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: migrate/fesh in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('fesh', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('fesh', Array)
+#2 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/fesh', Array)
+#3 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/fesh', Array)
+#4 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 D:\OS\OSPanel\domains\avtomig.local\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrate/fesh". in D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/fesh', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\yii(20): yii\base\Application->run()
+#3 {main}
+2021-07-16 16:51:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '118x32766 (118x32)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ahmad\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AHMAD-��'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040646'
+    'ConEmuBaseDir' => 'D:\\os\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\OS\\OSPanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190714'
+    'ConEmuCfgDir' => 'D:\\os\\ospanel\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\os\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x00020644'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x000D057C'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '10920'
+    'ConEmuServerPID' => '6900'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\os\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\os\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\os\\ospanel'
+    'LOCALAPPDATA' => 'C:\\Users\\ahmad\\AppData\\Local'
+    'LOGONSERVER' => '\\\\AHMAD-��'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ahmad\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\os\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\os\\ospanel\\modules\\conemu;D:\\os\\ospanel\\modules\\conemu\\ConEmu;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\os\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\os\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'ahmad-��'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ahmad-��'
+    'USERNAME' => 'ahmad'
+    'USERPROFILE' => 'C:\\Users\\ahmad'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\virtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1626443470.9037
+    'REQUEST_TIME' => 1626443470
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/fesh'
+    ]
+    'argc' => 2
+]
