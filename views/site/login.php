@@ -22,7 +22,7 @@ $fieldOptions2 = [
     <!-- begin brand -->
     <div class="login-header">
         <div class="brand">
-            <img src="/img/logo.png" alt="" style="height: 31px;margin-right: auto;margin-left: 70px">
+            <p>СПЕЦАВТОМИГ</p>
             <small style="margin-left: 55px">Введите данные для авторизации</small>
         </div>
     </div>
