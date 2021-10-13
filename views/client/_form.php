@@ -3,10 +3,13 @@
 use unclead\multipleinput\MultipleInput;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+use app\models\ClientContact;
 /* @var $this yii\web\View */
 /* @var $model app\models\Client */
 /* @var $form yii\widgets\ActiveForm */
+if($model->isNewRecord == false) {
+    $model->contacts = ClientContact::find()->where(['client_id' => $model->id])->all();
+}
 ?>
 
 <div class="client-form">
@@ -36,11 +39,14 @@ use yii\widgets\ActiveForm;
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <?= $form->field($model, 'official_address')->textInput(['maxlength' => true]) ?>
+                </div>
+                <div class="col-md-4">
+                    <?= $form->field($model, 'post_index')->textInput(['maxlength' => true]) ?>
                 </div>
             </div>
 

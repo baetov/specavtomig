@@ -1040,3 +1040,1343 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2021-10-13 15:18:50 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][Error] Error: Class 'GridView' not found in D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\driver\_columns.php:47
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\driver\index.php(35): require()
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OS\\OSPanel\\d...')
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OS\\OSPanel\\d...', Array)
+#3 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OS\\OSPanel\\d...', Array, Object(app\controllers\DriverController))
+#4 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\DriverController))
+#5 D:\OS\OSPanel\domains\avtomig.local\specavtomig\controllers\DriverController.php(57): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\DriverController->actionIndex()
+#7 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#9 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#10 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('driver', Array)
+#11 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#13 {main}
+2021-10-13 15:18:49 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = [
+    'DriverSearch' => [
+        'name' => ''
+        'type' => ''
+        'birth' => ''
+        'passport' => ''
+        'driver_license' => ''
+    ]
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '51815'
+    'REDIRECT_URL' => '/driver'
+    'REDIRECT_QUERY_STRING' => 'DriverSearch%5Bname%5D=&DriverSearch%5Btype%5D=&DriverSearch%5Bbirth%5D=&DriverSearch%5Bpassport%5D=&DriverSearch%5Bdriver_license%5D='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DriverSearch%5Bname%5D=&DriverSearch%5Btype%5D=&DriverSearch%5Bbirth%5D=&DriverSearch%5Bpassport%5D=&DriverSearch%5Bdriver_license%5D='
+    'REQUEST_URI' => '/driver?DriverSearch%5Bname%5D=&DriverSearch%5Btype%5D=&DriverSearch%5Bbirth%5D=&DriverSearch%5Bpassport%5D=&DriverSearch%5Bdriver_license%5D='
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634127529.959
+    'REQUEST_TIME' => 1634127529
+    'argv' => [
+        0 => 'DriverSearch%5Bname%5D=&DriverSearch%5Btype%5D=&DriverSearch%5Bbirth%5D=&DriverSearch%5Bpassport%5D=&DriverSearch%5Bdriver_license%5D='
+    ]
+    'argc' => 1
+]
+2021-10-13 17:30:05 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][Error] Error: Class 'ClientContact' not found in D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_form.php:11
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OS\\OSPanel\\d...', Array)
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OS\\OSPanel\\d...', Array, NULL)
+#3 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\update.php(11): yii\base\View->render('_form', Array)
+#4 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OS\\OSPanel\\d...')
+#5 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OS\\OSPanel\\d...', Array)
+#6 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\View.php(213): yii\base\View->renderFile('D:\\OS\\OSPanel\\d...', Array, Object(app\controllers\ClientController))
+#7 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Controller.php(53): yii\web\View->renderAjax('update', Array, Object(app\controllers\ClientController))
+#8 D:\OS\OSPanel\domains\avtomig.local\specavtomig\controllers\ClientController.php(169): yii\web\Controller->renderAjax('update', Array)
+#9 [internal function]: app\controllers\ClientController->actionUpdate('1')
+#10 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#13 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('client/update', Array)
+#14 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#16 {main}
+2021-10-13 17:30:05 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = [
+    'id' => '1'
+    '_' => '1634135403448'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'C9mCW-MXR88wIFvTfs2Q0el9fv-KcjI5ss6SxL4etmdGlrM6pnADtl8RYpdPoenjvQQ4uPkZVFvkgs2e7VHdJg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://avtomig/client'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60413'
+    'REDIRECT_URL' => '/client/update'
+    'REDIRECT_QUERY_STRING' => 'id=1&_=1634135403448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&_=1634135403448'
+    'REQUEST_URI' => '/client/update?id=1&_=1634135403448'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634135405.645
+    'REQUEST_TIME' => 1634135405
+    'argv' => [
+        0 => 'id=1&_=1634135403448'
+    ]
+    'argc' => 1
+]
+2021-10-13 17:40:02 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Client::contract_id in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('contract_id')
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php(39): yii\db\BaseActiveRecord->__get('contract_id')
+#2 [internal function]: yii\base\View->{closure}(Object(app\models\Client), 1, 0, Object(kartik\grid\DataColumn))
+#3 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Client), 1, 0, Object(kartik\grid\DataColumn))
+#4 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Client), 1, 0)
+#5 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(242): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Client), 1, 0)
+#6 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1304): kartik\grid\DataColumn->renderDataCell(Object(app\models\Client), 1, 0)
+#7 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Client), 1, 0)
+#8 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1284): yii\grid\GridView->renderTableBody()
+#9 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#10 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#11 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#12 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#15 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#16 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1204): yii\grid\GridView->run()
+#17 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#18 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\index.php(61): yii\base\Widget::widget(Array)
+#19 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OS\\OSPanel\\d...')
+#20 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OS\\OSPanel\\d...', Array)
+#21 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OS\\OSPanel\\d...', Array, Object(app\controllers\ClientController))
+#22 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\ClientController))
+#23 D:\OS\OSPanel\domains\avtomig.local\specavtomig\controllers\ClientController.php(57): yii\base\Controller->render('index', Array)
+#24 [internal function]: app\controllers\ClientController->actionIndex()
+#25 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#26 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#27 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#28 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('client', Array)
+#29 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#31 {main}
+2021-10-13 17:40:02 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://avtomig/client/view?id=1'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60443'
+    'REDIRECT_URL' => '/client'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/client'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634136002.383
+    'REQUEST_TIME' => 1634136002
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 17:40:26 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php:42
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php(42): yii\web\ErrorHandler->handleError()
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): yii\web\View->{closure:D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php:38-45}()
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): ::call_user_func:{D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php:165}()
+#3 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): kartik\grid\DataColumn->renderDataCellContent()
+#4 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(242): kartik\grid\DataColumn->renderDataCellContent()
+#5 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1304): kartik\grid\DataColumn->renderDataCell()
+#6 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow()
+#7 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1284): kartik\grid\GridView->renderTableBody()
+#8 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#9 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): kartik\grid\GridView->renderItems()
+#10 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): kartik\grid\GridView->renderSection()
+#11 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): kartik\grid\GridView->renderSection()
+#12 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): kartik\grid\GridView->yii\widgets\{closure:D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php:134-138}()
+#13 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): ::preg_replace_callback()
+#14 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): kartik\grid\GridView->run()
+#15 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1204): kartik\grid\GridView->run()
+#16 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#17 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\index.php(61): yii\base\Widget::widget()
+#18 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#19 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#20 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#21 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\web\View->render()
+#22 D:\OS\OSPanel\domains\avtomig.local\specavtomig\controllers\ClientController.php(57): app\controllers\ClientController->render()
+#23 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\ClientController->actionIndex()
+#24 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#25 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#26 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): app\controllers\ClientController->runAction()
+#27 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\web\Application->runAction()
+#28 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#29 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\web\Application->run()
+#30 {main}
+2021-10-13 17:40:26 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://avtomig/client/view?id=1'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60445'
+    'REDIRECT_URL' => '/client'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/client'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634136026.257
+    'REQUEST_TIME' => 1634136026
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 17:40:49 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php:42
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php(42): yii\web\ErrorHandler->handleError()
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): yii\web\View->{closure:D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\_columns.php:38-45}()
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): ::call_user_func:{D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\Column.php:165}()
+#3 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): kartik\grid\DataColumn->renderDataCellContent()
+#4 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(242): kartik\grid\DataColumn->renderDataCellContent()
+#5 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1304): kartik\grid\DataColumn->renderDataCell()
+#6 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow()
+#7 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1284): kartik\grid\GridView->renderTableBody()
+#8 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#9 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): kartik\grid\GridView->renderItems()
+#10 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): kartik\grid\GridView->renderSection()
+#11 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): kartik\grid\GridView->renderSection()
+#12 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): kartik\grid\GridView->yii\widgets\{closure:D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php:134-138}()
+#13 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): ::preg_replace_callback()
+#14 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): kartik\grid\GridView->run()
+#15 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1204): kartik\grid\GridView->run()
+#16 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#17 D:\OS\OSPanel\domains\avtomig.local\specavtomig\views\client\index.php(61): yii\base\Widget::widget()
+#18 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(348): yii\web\View->unknown()
+#19 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\web\View->renderPhpFile()
+#20 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\web\View->renderFile()
+#21 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\web\View->render()
+#22 D:\OS\OSPanel\domains\avtomig.local\specavtomig\controllers\ClientController.php(57): app\controllers\ClientController->render()
+#23 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\ClientController->actionIndex()
+#24 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#25 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#26 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): app\controllers\ClientController->runAction()
+#27 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\web\Application->runAction()
+#28 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#29 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\web\Application->run()
+#30 {main}
+2021-10-13 17:40:48 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://avtomig/client/view?id=1'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60448'
+    'REDIRECT_URL' => '/client'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/client'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634136048.961
+    'REQUEST_TIME' => 1634136048
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 17:54:41 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 17:54:41 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60528'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634136881.432
+    'REQUEST_TIME' => 1634136881
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 17:55:11 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 17:55:11 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60535'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634136911.078
+    'REQUEST_TIME' => 1634136911
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 17:59:12 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 17:59:12 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60581'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137152.428
+    'REQUEST_TIME' => 1634137152
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:04:16 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:04:16 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60622'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137456.295
+    'REQUEST_TIME' => 1634137456
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:05:35 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:05:35 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60636'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137535.738
+    'REQUEST_TIME' => 1634137535
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:06:06 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:06:06 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60643'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137566.796
+    'REQUEST_TIME' => 1634137566
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:07:25 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:07:25 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60660'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137645.175
+    'REQUEST_TIME' => 1634137645
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:08:05 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:08:05 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60677'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137685.311
+    'REQUEST_TIME' => 1634137685
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:10:29 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:10:29 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60691'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137829.258
+    'REQUEST_TIME' => 1634137829
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:11:20 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:11:20 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60709'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137880.367
+    'REQUEST_TIME' => 1634137880
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:13:16 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:13:16 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60738'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634137996.426
+    'REQUEST_TIME' => 1634137996
+    'argv' => []
+    'argc' => 0
+]
+2021-10-13 18:13:54 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/jquery/jquery.min.map". in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OS\OSPanel\domains\avtomig.local\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OS\OSPanel\domains\avtomig.local\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2021-10-13 18:13:53 [127.0.0.1][1][r2nnuget8qg7fi1o9q0mrorfteu4p502][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'r2nnuget8qg7fi1o9q0mrorfteu4p502'
+    '_csrf' => 'b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://avtomig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'avtomig'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=r2nnuget8qg7fi1o9q0mrorfteu4p502; _csrf=b0d5eb102f1697abe22bd16cc0b55d4150228f0f06924f30091713569a063924a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MO1aEgDyo19D1ly2TyFGskfbVL_ZSOkA%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\os\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\os\\ospanel\\modules\\wget\\bin;d:\\os\\ospanel\\modules\\git;d:\\os\\ospanel\\modules\\git\\bin;d:\\os\\ospanel\\modules\\git\\mingw\\bin;d:\\os\\ospanel\\modules\\git\\cmd;d:\\os\\ospanel\\modules\\database\\MySQL-5.6-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\bin;d:\\os\\ospanel\\modules\\database\\PostgreSQL-9.2-x64\\lib;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17\\bin;d:\\os\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64+Nginx_1.17;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;D:\\Programs\\nodeJs;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Programs\\nodeJs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ahmad\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ahmad\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'avtomig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OS/OSPanel/domains/avtomig.local/specavtomig/web/index.php'
+    'REMOTE_PORT' => '60748'
+    'REDIRECT_URL' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/jquery/jquery.min.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1634138033.945
+    'REQUEST_TIME' => 1634138033
+    'argv' => []
+    'argc' => 0
+]

@@ -1,26 +1,48 @@
 <?php
 
+use app\models\ClientContact;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Client */
 ?>
 <div class="client-view">
- 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
             'name',
+            [
+                'attribute' => 'contacts',
+                'value' => function($model){
+                    $contacts = ClientContact::find()->where(['client_id' => $model->id])->all();
+                    $contactFace = [];
+                    foreach ($contacts as $contact){
+                        $contactFace[] .= $contact->name . ' - ' . $contact->phone;
+                    }
+                    return implode(' , ',$contactFace);
+                }
+            ],
             'address',
             'post_index',
-            'type',
-            'created_at',
             'inn',
             'ogrn',
             'kpp',
             'official_address',
-            'address_equals',
+            [
+                'attribute' => 'address_equals',
+                'value' => function($model){
+                    if ($model->address_equals == 1){
+                        return  "Да";
+                    }
+                    elseif ($model->address_equals == 0){
+                        return  "Нет";
+                    }
+                    else{
+                        return 0;
+                    }
+                }
+            ],
             'director',
             'email:email',
             'phone',

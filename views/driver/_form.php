@@ -19,6 +19,10 @@ use yii\widgets\ActiveForm;
         3 => 'Водитель манипулятора'
     ]) ?>
 
+    <?= $form->field($model, 'phone')->widget(\yii\widgets\MaskedInput::class, [
+                'mask' => '+7 999 999-99-99',
+            ]) ?>
+
     <?= $form->field($model, 'birth')->input('date') ?>
 
     <?= $form->field($model, 'passport')->textInput() ?>

@@ -57,7 +57,7 @@ class Bid extends \yii\db\ActiveRecord
     {
         return [
             [['client_id', 'technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'driver_id', 'status', 'pay_status', 'price', 'hours', 'mkad', 'mkad_price', 'total', 'fuel', 'mileage'], 'integer'],
-            [['date', 'garage_out', 'garage_in', 'customer_in', 'customer_out'.'comment'], 'safe'],
+            [['date', 'garage_out', 'garage_in', 'customer_in', 'customer_out','comment'], 'safe'],
             [['route'], 'string'],
             [['pay_form'], 'string', 'max' => 255],
             [['client_id'], 'exist', 'skipOnError' => true, 'targetClass' => Client::className(), 'targetAttribute' => ['client_id' => 'id']],

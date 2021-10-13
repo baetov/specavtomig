@@ -31,9 +31,9 @@ class Driver extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'passport', 'driver_license', 'crane_license'], 'integer'],
+            [['type'], 'integer'],
             [['birth'], 'safe'],
-            [['name'], 'string', 'max' => 255],
+            [['name', 'driver_license', 'crane_license','phone', 'passport'], 'string', 'max' => 255],
         ];
     }
 
@@ -50,6 +50,7 @@ class Driver extends \yii\db\ActiveRecord
             'passport' => 'Серия и номер паспорта',
             'driver_license' => 'Серия и номер В.У.',
             'crane_license' => 'Серия и номер Удостоверения',
+            'phone' => 'Телефон'
         ];
     }
 

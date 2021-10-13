@@ -11,8 +11,24 @@ use yii\widgets\DetailView;
         'model' => $model,
         'attributes' => [
             'id',
-            'type',
+            [
+                'attribute' => 'type',
+                'value' => function($model){
+                    if ($model->type == 1){
+                        return  "Водитель тягача";
+                    }
+                    elseif ($model->type == 2){
+                        return  "Водитель автокарна";
+                    }
+                    elseif ($model->type == 3){
+                        return  "Водитель манипулятора";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
             'name',
+            'phone',
             'birth',
             'passport',
             'driver_license',

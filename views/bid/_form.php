@@ -190,12 +190,12 @@ use yii\widgets\ActiveForm;
                     "change" => "function() {
                             $.ajax({
                                 method: 'GET',
-                                url: '/bid/search-tech?q='+$(this).val(),
+                                url: '/bid/search-work?q='+$(this).val(),
                                 success: function(response){
 
                                     var data = '';
                                     
-                                    var currentValue = $('#bid-subgroup_id').val();
+                                    var currentValue = $('#bid-work_kind_id').val();
 
                                     $.each(response,function(key, value, i){
                                         
@@ -209,6 +209,7 @@ use yii\widgets\ActiveForm;
                                     $('#bid-work_type_id').html(data);
                                     
                                     $('#bid-work_type_id').val(currentValue);
+                                    
                                 }
                             });   
                         }",

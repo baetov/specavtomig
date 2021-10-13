@@ -18,8 +18,8 @@ class DriverSearch extends Driver
     public function rules()
     {
         return [
-            [['id', 'type', 'passport', 'driver_license', 'crane_license'], 'integer'],
-            [['name', 'birth'], 'safe'],
+            [['id', 'type'], 'integer'],
+            [['name', 'birth','phone','passport', 'driver_license', 'crane_license'], 'safe'],
         ];
     }
 
@@ -58,13 +58,15 @@ class DriverSearch extends Driver
         $query->andFilterWhere([
             'id' => $this->id,
             'type' => $this->type,
-            'birth' => $this->birth,
-            'passport' => $this->passport,
-            'driver_license' => $this->driver_license,
-            'crane_license' => $this->crane_license,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name]);
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'birth', $this->birth])
+            ->andFilterWhere(['like', 'phone', $this->phone])
+            ->andFilterWhere(['like', 'crane_license', $this->crane_license])
+            ->andFilterWhere(['like', 'driver_license', $this->driver_license])
+            ->andFilterWhere(['like', 'passport', $this->passport])
+        ;
 
         return $dataProvider;
     }
