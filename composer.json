@@ -32,7 +32,7 @@
         "kartik-v/yii2-widget-typeahead": "^1.0",
         "unclead/yii2-multiple-input": "~2.0",
         "kartik-v/yii2-widget-fileinput": "@dev",
-        "kartik-v/yii2-widget-datepicker": "^1.4",
+        "kartik-v/yii2-widget-datepicker": "@dev",
         "rmrevin/yii2-comments": "^1.4",
         "kartik-v/yii2-field-range": "^1.3",
         "kartik-v/yii2-widget-rangeinput": "^1.0",

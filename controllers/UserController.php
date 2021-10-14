@@ -51,11 +51,7 @@ class UserController extends Controller
             'role' => [
                 'class' => RoleBehavior::class,
                 'actions' => [
-                    'create' => 'user_create',
-                    'update' => 'user_update',
-                    'view' => 'user_view',
-                    'delete' => 'user_delete',
-                    'index' => ['user_view', 'user_view_all'],
+                    'index' => 'directory_access',
                 ],
             ],
         ];
@@ -186,18 +182,12 @@ class UserController extends Controller
     {
         $request = Yii::$app->request;
 
-        $scanSearchModel = new ScanSearch();
-        $scanDataProvider = $scanSearchModel->search([]);
-        $scanDataProvider->query->andWhere(['user_id' => $id]);
-
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
                     'title'=> "пользователь",
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
-                        'scanSearchModel' => $scanSearchModel,
-                        'scanDataProvider' => $scanDataProvider,
                     ]),
                     'footer'=> Html::button('Отмена',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                             Html::a('Изменить',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
@@ -205,8 +195,6 @@ class UserController extends Controller
         }else{
             return $this->render('view', [
                 'model' => $this->findModel($id),
-                'scanSearchModel' => $scanSearchModel,
-                'scanDataProvider' => $scanDataProvider,
             ]);
         }
     }

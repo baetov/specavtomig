@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\behaviors\RoleBehavior;
 use Yii;
 use app\models\TechnicType;
 use app\models\TechnicTypeSearch;
@@ -38,6 +39,12 @@ class TechnicTypeController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                     'bulk-delete' => ['post'],
+                ],
+            ],
+            'role' => [
+                'class' => RoleBehavior::class,
+                'actions' => [
+                    'index' => 'directory_access',
                 ],
             ],
         ];

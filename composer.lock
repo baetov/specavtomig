@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "094b2757274fbf8780e4b8690ca729aa",
+    "content-hash": "37c67b38374b57aa69553656f66ec6af",
     "packages": [
         {
             "name": "andre_487/php_rutils",
@@ -6079,6 +6079,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "kartik-v/yii2-widget-fileinput": 20,
+        "kartik-v/yii2-widget-datepicker": 20,
         "kartik-v/yii2-widget-timepicker": 20
     },
     "prefer-stable": true,

@@ -1,5 +1,9 @@
 <?php
 
+use app\models\MultiTechSubgroup;
+use app\models\TechnicType;
+use app\models\TechnicTypeSubgroup;
+use yii\helpers\ArrayHelper;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
@@ -16,7 +20,20 @@ use yii\widgets\DetailView;
             'gos_num',
             'characteristics',
             'equipment',
-            'type_id',
+            [
+                'attribute' => 'type_id',
+                'value' => function($model){
+                    return ArrayHelper::getValue(TechnicType::find()->where(['id' => $model->type_id])->one(),'name');
+                }
+            ],
+            [
+                'attribute' => 'subgroups',
+                'value' => function($model){
+                     $subs = ArrayHelper::getColumn(MultiTechSubgroup::find()->where(['technic_id' => $model->id])->all(),'subgroup_id');
+                     $subsName = ArrayHelper::getColumn(TechnicTypeSubgroup::find()->where(['id' => $subs])->all(),'name');
+                     return implode(' , ',$subsName);
+                }
+            ],
         ],
     ]) ?>
 

@@ -17,6 +17,7 @@ use Yii;
 class TechnicType extends \yii\db\ActiveRecord
 {
     public $subgroups;
+
     /**
      * {@inheritdoc}
      */
@@ -47,42 +48,47 @@ class TechnicType extends \yii\db\ActiveRecord
             'subgroups' => 'Подгруппа'
         ];
     }
+
     /**
      * @inheritdoc
      */
     public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
-        $bankAll = TechnicTypeSubgroup::find()->where(['technic_type_id' => $this->id,])->all();
-        foreach ($bankAll as $item1) {
-            $a = false;
-            if ($this->subgroups == null) {
-                $item1->delete();
-                continue;
-            }
-            foreach ($this->subgroups as $item3) {
-                if ($item3['id'] == $item1->id) {
-                    $a = true;
-                }
-                if (!$a) {
+        if ($this->subgroups != null) {
+            $bankAll = TechnicTypeSubgroup::find()->where(['technic_type_id' => $this->id,])->all();
+            foreach ($bankAll as $item1) {
+                $a = false;
+                if ($this->subgroups == null) {
                     $item1->delete();
-                    break;
+                    continue;
+                }
+                foreach ($this->subgroups as $item3) {
+                    if ($item3['id'] == $item1->id) {
+                        $a = true;
+                    }
+                    if (!$a) {
+                        $item1->delete();
+                        break;
+                    }
                 }
             }
-        }
-        if($this->subgroups != null){
-            foreach ($this->subgroups as $item) {
-                $bank = TechnicTypeSubgroup::find()->where(['id' => $item['id']])->one();
-                if (!$bank) {
-                    (new TechnicTypeSubgroup([
-                        'technic_type_id' => $this->id,
-                        'name' => $item['name'],
-                    ]))->save(false);
-                } else {
-                    $bank->name = $item['name'];
-                    $bank->save(false);
+            if ($this->subgroups != null) {
+                foreach ($this->subgroups as $item) {
+                    $bank = TechnicTypeSubgroup::find()->where(['id' => $item['id']])->one();
+                    if (!$bank) {
+                        (new TechnicTypeSubgroup([
+                            'technic_type_id' => $this->id,
+                            'name' => $item['name'],
+                        ]))->save(false);
+                    } else {
+                        $bank->name = $item['name'];
+                        $bank->save(false);
+                    }
                 }
             }
+        }else {
+            TechnicTypeSubgroup::deleteAll(['technic_type_id' => $this->id]);
         }
     }
 

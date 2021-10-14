@@ -1,6 +1,8 @@
 <?php
 
+use app\models\MultiTechSubgroup;
 use app\models\TechnicType;
+use app\models\TechnicTypeSubgroup;
 use kartik\select2\Select2;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -9,6 +11,11 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model app\models\Technic */
 /* @var $form yii\widgets\ActiveForm */
+$data = ArrayHelper::map(\app\models\TechnicTypeSubgroup::find()->all(), 'id', 'name');
+if($model->isNewRecord == false) {
+    $a = ArrayHelper::getColumn(MultiTechSubgroup::find()->where(['technic_id' => $model->id])->all(), 'subgroup_id');
+    $model->subgroups = ArrayHelper::getColumn(TechnicTypeSubgroup::find()->where(['id' => $a])->all(), 'name');
+}
 ?>
 
 <div class="technic-form">
@@ -71,22 +78,29 @@ use yii\widgets\ActiveForm;
                                     
                                     console.log(data);
                                     
-                                    $('#technic-subgroup_id').html(data);
+                                    $('#technic-subgroups').html(data);
                                     
-                                    $('#technic-subgroup_id').val(currentValue);
+                                    $('#technic-subgroups').val(currentValue);
                                 }
                             });   
                         }",
         ],
     ]);
     ?>
-    <?= $form->field($model, 'subgroup_id')->widget(Select2::classname(), [
-        'data' =>  ArrayHelper::map(TechnicType::find()->all(), 'id', 'name'),
+    <?= $form->field($model, 'subgroups')->widget(Select2::classname(), [
         'language' => 'ru',
-        'options' => ['placeholder' => 'выберите подгруппу ...'],
-        'pluginOptions' => [
-            'allowClear' => true
+        'options' => [
+            'multiple' => true,
+            'placeholder' => 'выберите подгруппу ...'
         ],
+        'pluginOptions' => [
+            'data' => ArrayHelper::map(\app\models\TechnicTypeSubgroup::find()->all(), 'id', 'name'),
+            'allowClear' => true,
+            'tags' => false,
+            'tokenSeparators' => [','],
+        ],
+
+
     ]);
     ?>
 

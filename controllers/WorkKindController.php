@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\behaviors\RoleBehavior;
 use Yii;
 use app\models\WorkKind;
 use app\models\WorkKindSearch;
@@ -38,6 +39,12 @@ class WorkKindController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                     'bulk-delete' => ['post'],
+                ],
+            ],
+            'role' => [
+                'class' => RoleBehavior::class,
+                'actions' => [
+                    'index' => 'directory_access',
                 ],
             ],
         ];

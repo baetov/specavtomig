@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\behaviors\RoleBehavior;
+use app\models\MultiTechSubgroup;
 use app\models\Technic;
 use app\models\TechnicType;
 use app\models\TechnicTypeSubgroup;
@@ -43,6 +45,16 @@ class BidController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                     'bulk-delete' => ['post'],
+                ],
+            ],
+            'role' => [
+                'class' => RoleBehavior::class,
+                'actions' => [
+                    'create' => 'order_create',
+                    'update' => 'order_update',
+                    'view' => 'order_view',
+                    'delete' => 'order_delete',
+                    'index' => ['order_view', 'order_view_all'],
                 ],
             ],
         ];
@@ -284,8 +296,9 @@ class BidController extends Controller
      */
     public function actionSearchTech($q){
         Yii::$app->response->format = Response::FORMAT_JSON;
-        $list = ArrayHelper::map(Technic::find()->where(['subgroup_id' => $q])->all(), 'id', 'name');
-        return $list;
+        $list =  ArrayHelper::map(MultiTechSubgroup::find()->where(['subgroup_id' => $q])->all(), 'id', 'technic_id');
+        $techList = ArrayHelper::map(Technic::find()->where(['id' => $list])->all(), 'id', 'name');
+        return $techList;
     }
 
     /**

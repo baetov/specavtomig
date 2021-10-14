@@ -2,6 +2,8 @@
 
 namespace app\models;
 
+use DateInterval;
+use DateTime;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -12,6 +14,7 @@ use app\models\Bid;
  */
 class BidSearch extends Bid
 {
+
     /**
      * @inheritdoc
      */
@@ -63,7 +66,6 @@ class BidSearch extends Bid
             'technic_id' => $this->technic_id,
             'work_kind_id' => $this->work_kind_id,
             'work_type_id' => $this->work_type_id,
-            'date' => $this->date,
             'status' => $this->status,
             'pay_status' => $this->pay_status,
             'price' => $this->price,
@@ -81,6 +83,12 @@ class BidSearch extends Bid
 
         $query->andFilterWhere(['like', 'route', $this->route])
             ->andFilterWhere(['like', 'pay_form', $this->pay_form]);
+        if($this->date != null){
+            $dateStart = $this->date .' '. '00'. ':'.'00'.':'.'00';
+            $dateEnd = $this->date .' '. '23'. ':'.'59'.':'.'59';
+            
+            $query->andFilterWhere(['between', 'date', $dateStart, $dateEnd]);
+        }
 
         return $dataProvider;
     }

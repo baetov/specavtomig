@@ -12,28 +12,84 @@ use yii\widgets\DetailView;
         'attributes' => [
             'id',
             'name',
-            'contract_create',
-            'contract_update',
-            'contract_delete',
-            'contract_view',
-            'contract_view_all',
-            'order_create',
-            'order_update',
-            'order_delete',
-            'order_view',
-            'order_view_all',
-            'task_create',
-            'task_update',
-            'task_delete',
-            'task_view',
-            'task_view_all',
-            'directory_access',
-            'user_create',
-            'user_update',
-            'user_delete',
-            'user_view',
-            'user_view_all',
-            'report_access',
+            [
+                'attribute' => 'order_create',
+                'value' => function($model){
+                    if ($model->order_create == 0){
+                        return  "Нет";
+                    }
+                    elseif ($model->order_create == 1){
+                        return  "Да";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
+            [
+                'attribute' => 'order_update',
+                'value' => function($model){
+                    if ($model->order_update == 0){
+                        return  "Нет";
+                    }
+                    elseif ($model->order_update == 1){
+                        return  "Да";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
+            [
+                'attribute' => 'order_delete',
+                'value' => function($model){
+                    if ($model->order_delete == 0){
+                        return  "Нет";
+                    }
+                    elseif ($model->order_delete == 1){
+                        return  "Да";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
+            [
+                'attribute' => 'order_view',
+                'value' => function($model){
+                    if ($model->order_view == 0){
+                        return  "Нет";
+                    }
+                    elseif ($model->order_view == 1){
+                        return  "Да";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
+            [
+                'attribute' => 'order_view_all',
+                'value' => function($model){
+                    if ($model->order_view_all == 0){
+                        return  "Нет";
+                    }
+                    elseif ($model->order_view_all == 1){
+                        return  "Да";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
+            [
+                'attribute' => 'directory_access',
+                'value' => function($model){
+                    if ($model->directory_access == 0){
+                        return  "Нет";
+                    }
+                    elseif ($model->directory_access == 1){
+                        return  "Да";
+                    }else{
+                        return 0;
+                    }
+                }
+            ],
         ],
     ]) ?>
 
