@@ -30,6 +30,7 @@ return [
         'value' => function($data){
             return ArrayHelper::getValue(Client::find()->where(['id' => $data->client_id])->one(),'name');
         },
+        'hAlign' => GridView::ALIGN_CENTER,
         'filter' => ArrayHelper::map(Client::find()->all(),'id','name'),
         'filterType' => GridView::FILTER_SELECT2,
         'filterWidgetOptions' => [
@@ -37,35 +38,37 @@ return [
             'pluginOptions' => ['allowClear' => true],
         ],
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'technic_type_id',
-        'value' => function($data){
-            return ArrayHelper::getValue(TechnicType::find()->where(['id' => $data->technic_type_id])->one(),'name');
-        },
-        'filter' => ArrayHelper::map(TechnicType::find()->all(),'id','name'),
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'technic_type_subgroup_id',
-        'value' => function($data){
-            return ArrayHelper::getValue(TechnicTypeSubgroup::find()->where(['id' => $data->technic_type_subgroup_id])->one(),'name');
-        },
-        'filter' => ArrayHelper::map(TechnicTypeSubgroup::find()->all(),'id','name'),
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
-    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'technic_type_id',
+//        'value' => function($data){
+//            return ArrayHelper::getValue(TechnicType::find()->where(['id' => $data->technic_type_id])->one(),'name');
+//        },
+//        'filter' => ArrayHelper::map(TechnicType::find()->all(),'id','name'),
+//        'filterType' => GridView::FILTER_SELECT2,
+//        'filterWidgetOptions' => [
+//            'options' => ['prompt' => ''],
+//            'pluginOptions' => ['allowClear' => true],
+//        ],
+//    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'technic_type_subgroup_id',
+//        'value' => function($data){
+//            return ArrayHelper::getValue(TechnicTypeSubgroup::find()->where(['id' => $data->technic_type_subgroup_id])->one(),'name');
+//        },
+//        'filter' => ArrayHelper::map(TechnicTypeSubgroup::find()->all(),'id','name'),
+//        'filterType' => GridView::FILTER_SELECT2,
+//        'filterWidgetOptions' => [
+//            'options' => ['prompt' => ''],
+//            'pluginOptions' => ['allowClear' => true],
+//        ],
+//    ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'technic_id',
+        'label' => 'Номер Техники',
+        'hAlign' => GridView::ALIGN_CENTER,
         'value' => function($data){
             return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
         },
@@ -78,7 +81,74 @@ return [
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'garage_out',
+        'hAlign' => GridView::ALIGN_CENTER,
+        'format' =>  ['date', 'd-m-Y H:i'],
+        'filterInputOptions' => [
+            'class' => 'form-control',
+            'type' => 'date',
+            'pluginOptions' => [
+                'allowClear' => true,
+                'convertFormat'=>true,
+                'locale' => [
+                    'cancelLabel' => 'Clear',
+                    'format' => 'YYYY-MM-DD'
+                ]
+            ],],
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'customer_in',
+        'hAlign' => GridView::ALIGN_CENTER,
+        'format' =>  ['date', 'd-m-Y H:i'],
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'customer_out',
+        'hAlign' => GridView::ALIGN_CENTER,
+        'format' =>  ['date', 'd-m-Y H:i'],
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'garage_in',
+        'hAlign' => GridView::ALIGN_CENTER,
+        'format' =>  ['date', 'd-m-Y H:i'],
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'hours',
+        'hAlign' => GridView::ALIGN_CENTER,
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'price',
+        'hAlign' => GridView::ALIGN_CENTER,
+    ],
+
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'mkad',
+        'hAlign' => GridView::ALIGN_CENTER,
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'mkad_price',
+        'hAlign' => GridView::ALIGN_CENTER,
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'total',
+        'hAlign' => GridView::ALIGN_CENTER,
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'pay_form',
+        'hAlign' => GridView::ALIGN_CENTER,
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'work_kind_id',
+        'hAlign' => GridView::ALIGN_CENTER,
         'value' => function($data){
             return ArrayHelper::getValue(WorkKind::find()->where(['id' => $data->work_kind_id])->one(),'name');
         },
@@ -92,6 +162,7 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'work_type_id',
+        'hAlign' => GridView::ALIGN_CENTER,
         'value' => function($data){
             return ArrayHelper::getValue(WorkType::find()->where(['id' => $data->work_type_id])->one(),'name');
         },
@@ -102,9 +173,20 @@ return [
             'pluginOptions' => ['allowClear' => true],
         ],
     ],
+
+     [
+         'class'=>'\kartik\grid\DataColumn',
+         'attribute'=>'route',
+         'hAlign' => GridView::ALIGN_CENTER,
+     ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'fuel',
+    ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'date',
+        'hAlign' => GridView::ALIGN_CENTER,
         'filterInputOptions' => [
             'class' => 'form-control',
             'type' => 'date',
@@ -117,13 +199,10 @@ return [
                 ]
             ],],
     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'route',
-     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'status',
+        'hAlign' => GridView::ALIGN_CENTER,
         'content' => function($data){
             if ($data->status == 0){
                 return  "Резерв";
@@ -156,6 +235,7 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'pay_status',
+        'hAlign' => GridView::ALIGN_CENTER,
         'content' => function($data){
             if ($data->pay_status == 0){
                 return  "Не оплачено";
@@ -181,54 +261,15 @@ return [
             'pluginOptions' => ['allowClear' => true],
         ],
     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'pay_form',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'price',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'hours',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'mkad',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'mkad_price',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'total',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'fuel',
-     ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'comment',
+    ],
 //     [
 //         'class'=>'\kartik\grid\DataColumn',
 //         'attribute'=>'mileage',
 //     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'garage_out',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'garage_in',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'customer_in',
-     ],
-     [
-         'class'=>'\kartik\grid\DataColumn',
-         'attribute'=>'customer_out',
-     ],
+
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,

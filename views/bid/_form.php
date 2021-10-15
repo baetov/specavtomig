@@ -22,7 +22,7 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <?= $form->field($model, 'client_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(Client::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -32,7 +32,7 @@ use yii\widgets\ActiveForm;
                 ],
             ]) ?>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <?= $form->field($model, 'technic_type_id')->widget(Select2::classname(), [
                 'data' => ArrayHelper::map(TechnicType::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -89,7 +89,7 @@ use yii\widgets\ActiveForm;
             ]);
             ?>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <?= $form->field($model, 'technic_type_subgroup_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(TechnicTypeSubgroup::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -146,7 +146,10 @@ use yii\widgets\ActiveForm;
             ]);
             ?>
         </div>
-        <div class="col-md-3">
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
             <?= $form->field($model, 'technic_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(Technic::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -157,9 +160,68 @@ use yii\widgets\ActiveForm;
             ]);
             ?>
         </div>
+        <div class="col-md-4">
+            <?= $form->field($model, 'driver_id')->widget(Select2::classname(), [
+                'data' =>  ArrayHelper::map(Driver::find()->all(), 'id', 'name'),
+                'language' => 'ru',
+                'options' => ['placeholder' => 'выберите водителя ...'],
+                'pluginOptions' => [
+                    'allowClear' => true
+                ],
+            ]);
+            ?>
+        </div>
+        <div class="col-md-4">
+            <?= $form->field($model, 'fuel')->textInput() ?>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-3">
+            <?= $form->field($model, 'garage_out')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        </div>
+        <div class="col-md-3">
+            <?= $form->field($model, 'customer_in')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        </div>
+        <div class="col-md-3">
+            <?= $form->field($model, 'customer_out')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        </div>
+        <div class="col-md-3">
+            <?= $form->field($model, 'garage_in')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <?= $form->field($model, 'hours')->textInput() ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'price')->textInput() ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'mkad')->textInput() ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'mkad_price')->textInput() ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'total')->textInput() ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'pay_form')->dropDownList([
+                'Наличный расчет' => 'Наличный расчет',
+                'Б/Н Расчет + НДС' => 'Б/Н Расчет + НДС',
+                'Б/Н Расчет в.ч. НДС' => 'Б/Н Расчет в.ч. НДС'
+            ]) ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <?= $form->field($model, 'route')->textarea(['rows' => 4]) ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
             <?= $form->field($model, 'work_kind_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(WorkKind::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -217,7 +279,7 @@ use yii\widgets\ActiveForm;
             ]);
             ?>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <?= $form->field($model, 'work_type_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(WorkType::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -228,83 +290,29 @@ use yii\widgets\ActiveForm;
             ]);
             ?>
         </div>
-        <div class="col-md-3">
-        <?= $form->field($model, 'driver_id')->widget(Select2::classname(), [
-                'data' =>  ArrayHelper::map(Driver::find()->all(), 'id', 'name'),
-                'language' => 'ru',
-                'options' => ['placeholder' => 'выберите водителя ...'],
-                'pluginOptions' => [
-                    'allowClear' => true
-                ],
-            ]);
-            ?>
-        </div>
-        <div class="col-md-3">
-            <?= $form->field($model, 'date')->widget(\kartik\datetime\DateTimePicker::className()) ?>
-        </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-        <?= $form->field($model, 'route')->textarea(['rows' => 4]) ?>
-        </div>
-    </div>
+
 
     <div class="row">
         <div class="col-md-4">
             <?= $form->field($model, 'status')->dropDownList([
-                    0 => 'Резерв',
-                    1 => 'Подтверждена',
-                    2 => 'В работе',
-                    3 => 'Завершена'
+                0 => 'Резерв',
+                1 => 'Подтверждена',
+                2 => 'В работе',
+                3 => 'Завершена'
             ]) ?>
+        </div>
+        <div class="col-md-4">
+            <?= $form->field($model, 'date')->widget(\kartik\datetime\DateTimePicker::className()) ?>
         </div>
         <div class="col-md-4">
             <?= $form->field($model, 'pay_status')->dropDownList([
-                    0 => 'Не оплачено',
-                    1 => 'Частично оплачено',
-                    2 => 'Оплачено'
+                0 => 'Не оплачено',
+                1 => 'Частично оплачено',
+                2 => 'Оплачено'
             ]) ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'pay_form')->dropDownList([
-                    'Наличный расчет' => 'Наличный расчет',
-                    'Б/Н Расчет + НДС' => 'Б/Н Расчет + НДС'
-            ]) ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-            <?= $form->field($model, 'price')->textInput() ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'hours')->textInput() ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'mkad')->textInput() ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'mkad_price')->textInput() ?>
-        </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'total')->textInput() ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-            <?= $form->field($model, 'garage_out')->widget(\kartik\datetime\DateTimePicker::className()) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'customer_in')->widget(\kartik\datetime\DateTimePicker::className()) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'customer_out')->widget(\kartik\datetime\DateTimePicker::className()) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'garage_in')->widget(\kartik\datetime\DateTimePicker::className()) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'fuel')->textInput() ?>
-        </div>
+
     </div>
     <div class="row">
         <div class="col-md-12">

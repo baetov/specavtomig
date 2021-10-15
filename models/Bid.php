@@ -56,9 +56,9 @@ class Bid extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['client_id', 'technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'driver_id', 'status', 'pay_status', 'price', 'hours', 'mkad', 'mkad_price', 'total', 'fuel', 'mileage'], 'integer'],
+            [['client_id', 'technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'driver_id', 'status', 'pay_status', 'mileage'], 'integer'],
             [['date', 'garage_out', 'garage_in', 'customer_in', 'customer_out','comment'], 'safe'],
-            [['route'], 'string'],
+            [['route', 'price', 'hours', 'mkad', 'mkad_price', 'total', 'fuel'], 'string'],
             [['pay_form'], 'string', 'max' => 255],
             [['client_id'], 'exist', 'skipOnError' => true, 'targetClass' => Client::className(), 'targetAttribute' => ['client_id' => 'id']],
             [['technic_id'], 'exist', 'skipOnError' => true, 'targetClass' => Technic::className(), 'targetAttribute' => ['technic_id' => 'id']],
@@ -83,13 +83,13 @@ class Bid extends \yii\db\ActiveRecord
             'technic_id' => 'Техника',
             'work_kind_id' => 'Вид Работ',
             'work_type_id' => 'Подгруппа видов работ',
-            'date' => 'Дата и время подачи',
+            'date' => 'Дата и время резерва',
             'route' => 'Маршрут',
             'status' => 'Статус заявки',
             'pay_status' => 'Статус оплаты',
             'pay_form' => 'Форма оплаты',
             'price' => 'Цена за час',
-            'hours' => 'кол-во часов работы',
+            'hours' => 'Кол-во часов работы',
             'mkad' => 'км за МКАД',
             'mkad_price' => 'Цена за км',
             'total' => 'Итого',

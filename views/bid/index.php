@@ -21,9 +21,7 @@ CrudAsset::register($this);
         <h4 class="panel-title">Заявки</h4>
     </div>
     <div class="panel-body">
-
         <div id="ajaxCrudDatatable">
-
             <?= GridView::widget([
                 'id' => 'crud-datatable',
                 'dataProvider' => $dataProvider,
