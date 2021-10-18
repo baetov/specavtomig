@@ -20,14 +20,17 @@ use yii\widgets\DetailView;
                     ],
                     [
                         'attribute' => 'technic_type_id',
+                        'label' => 'Тип и подтип техники',
                         'value' => function($model){
-                            return \yii\helpers\ArrayHelper::getValue(\app\models\TechnicType::find()->where(['id' => $model->technic_type_id])->one(),'name');
-                        }
+                            $type =  \yii\helpers\ArrayHelper::getValue(\app\models\TechnicType::find()->where(['id' => $model->technic_type_id])->one(),'name');
+                            $subtype = yii\helpers\ArrayHelper::getValue(\app\models\TechnicTypeSubgroup::find()->where(['id' => $model->technic_type_subgroup_id])->one(),'name');
+                            return $type . ' - ' . $subtype;
+                         }
                     ],
                     [
-                        'attribute' => 'technic_type_subgroup_id',
+                        'attribute' => 'driver_id',
                         'value' => function($model){
-                            return \yii\helpers\ArrayHelper::getValue(\app\models\TechnicTypeSubgroup::find()->where(['id' => $model->technic_type_subgroup_id])->one(),'name');
+                            return \yii\helpers\ArrayHelper::getValue(\app\models\Driver::find()->where(['id' => $model->driver_id])->one(),'name');
                         }
                     ],
                     [
