@@ -93,7 +93,7 @@ use yii\widgets\ActiveForm;
             <?= $form->field($model, 'technic_type_subgroup_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(TechnicTypeSubgroup::find()->all(), 'id', 'name'),
                 'language' => 'ru',
-                'options' => ['placeholder' => 'выберите подгруппу видов техники...'],
+                'options' => ['placeholder' => 'выберите подтип техники...'],
                 'pluginOptions' => [
                     'allowClear' => true
                 ],'pluginEvents' => [
@@ -295,22 +295,38 @@ use yii\widgets\ActiveForm;
 
     <div class="row">
         <div class="col-md-4">
-            <?= $form->field($model, 'status')->dropDownList([
-                0 => 'Резерв',
-                1 => 'Подтверждена',
-                2 => 'В работе',
-                3 => 'Завершена'
-            ]) ?>
+            <?= $form->field($model, 'status')->widget(Select2::classname(), [
+                'data' =>  [
+                        0 => 'Резерв',
+                        1 => 'Подтверждена',
+                        2 => 'В работе',
+                        3 => 'Завершена'
+                ],
+                'language' => 'ru',
+                'options' => ['placeholder' => 'выберите статус ...'],
+                'pluginOptions' => [
+                    'allowClear' => true
+                ],
+            ]);
+            ?>
         </div>
         <div class="col-md-4">
             <?= $form->field($model, 'date')->widget(\kartik\datetime\DateTimePicker::className()) ?>
         </div>
         <div class="col-md-4">
-            <?= $form->field($model, 'pay_status')->dropDownList([
-                0 => 'Не оплачено',
-                1 => 'Частично оплачено',
-                2 => 'Оплачено'
-            ]) ?>
+            <?= $form->field($model, 'pay_status')->widget(Select2::classname(), [
+                'data' =>  [
+                    0 => 'Не оплачено',
+                    1 => 'Частично оплачено',
+                    2 => 'Оплачено'
+                ],
+                'language' => 'ru',
+                'options' => ['placeholder' => 'выберите статус ...'],
+                'pluginOptions' => [
+                    'allowClear' => true
+                ],
+            ]);
+            ?>
         </div>
 
     </div>
