@@ -72,23 +72,6 @@ use yii\widgets\DetailView;
                             }
                         }
                     ],
-                    [
-                        'attribute' => 'pay_status',
-                        'value' => function($model){
-                            if ($model->pay_status ==  0){
-                                return  "Не оплачено";
-                            }
-                            elseif ($model->pay_status == 1){
-                                return  "Частично оплачено";
-                            }
-                            elseif ($model->pay_status == 2){
-                                return  "Оплачено";
-                            }
-                            else{
-                                return 0;
-                            }
-                        }
-                    ],
                     'date',
                 ],
             ]) ?>
@@ -104,10 +87,22 @@ use yii\widgets\DetailView;
                     'mkad_price',
                     'total',
                     'fuel',
-                    'garage_out',
-                    'garage_in',
-                    'customer_in',
-                    'customer_out',
+                    [
+                        'attribute' => 'garage_out',
+                        'format' =>  ['date', 'd-M-Y H:i'],
+                    ],
+                    [
+                        'attribute' => 'customer_in',
+                        'format' =>  ['date', 'd-M-Y H:i'],
+                    ],
+                    [
+                        'attribute' => 'customer_out',
+                        'format' =>  ['date', 'd-M-Y H:i'],
+                    ],
+                    [
+                        'attribute' => 'garage_in',
+                        'format' =>  ['date', 'd-M-Y H:i'],
+                    ],
                 ],
             ]) ?>
         </div>

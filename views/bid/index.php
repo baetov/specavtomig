@@ -97,22 +97,6 @@ CrudAsset::register($this);
                     ]);
                     ?>
                 </div>
-                <div class="col-md-3">
-                    <?= $form->field($searchModel, 'pay_status')->widget(Select2::classname(), [
-                        'data' =>  [
-                            0 => 'Не оплачено',
-                            1 => 'Частично оплачено',
-                            2 => 'Оплачено'
-                        ],
-                        'language' => 'ru',
-                        'options' => ['placeholder' => ''],
-                        'pluginOptions' => [
-                            'allowClear' => true
-                        ],
-                    ]);
-                    ?>
-                </div>
-
                 <div class="col-md-12">
                     <?= Html::a('Сбросить', ['bid/index'], ['class' => 'btn btn-default']) ?>
                     <?= Html::submitButton('Применить', ['class' => 'btn btn-success']) ?>
@@ -139,6 +123,7 @@ CrudAsset::register($this);
                         'id' => 'crud-datatable',
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
+//                        'resizableColumns'=>true,
                         'responsiveWrap' => false,
                         'pjax' => true,
                         'columns' => require(__DIR__ . '/_columns.php'),

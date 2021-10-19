@@ -69,7 +69,7 @@ class BidController extends Controller
         $searchModel = new BidSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $dataProvider->sort->defaultOrder = ['id' => SORT_DESC];
-        $dataProvider->pagination->pageSize=7;
+        $dataProvider->pagination->pageSize=29;
 
         return $this->render('index', [
             'searchModel' => $searchModel,

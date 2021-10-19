@@ -31,12 +31,7 @@ return [
             return ArrayHelper::getValue(Client::find()->where(['id' => $data->client_id])->one(),'name');
         },
         'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => ArrayHelper::map(Client::find()->all(),'id','name'),
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
+        'filter' => false
     ],
 //    [
 //        'class'=>'\kartik\grid\DataColumn',
@@ -67,83 +62,77 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'technic_id',
-        'label' => 'Номер Техники',
+        'format' => 'raw',
         'hAlign' => GridView::ALIGN_CENTER,
         'value' => function($data){
             return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
         },
-        'filter' => ArrayHelper::map(Technic::find()->all(),'id','name'),
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
+        'filter' => false,
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'garage_out',
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-m-Y H:i'],
-        'filterInputOptions' => [
-            'class' => 'form-control',
-            'type' => 'date',
-            'pluginOptions' => [
-                'allowClear' => true,
-                'convertFormat'=>true,
-                'locale' => [
-                    'cancelLabel' => 'Clear',
-                    'format' => 'YYYY-MM-DD'
-                ]
-            ],],
+        'format' =>  ['date', 'd-M-Y H:i'],
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'customer_in',
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-m-Y H:i'],
+        'format' =>  ['date', 'd-M-Y H:i'],
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'customer_out',
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-m-Y H:i'],
+        'format' =>  ['date', 'd-M-Y H:i'],
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'garage_in',
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-m-Y H:i'],
+        'format' =>  ['date', 'd-M-Y H:i'],
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'hours',
         'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'price',
         'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
     ],
 
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'mkad',
         'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'mkad_price',
         'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'total',
         'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'pay_form',
         'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
@@ -152,12 +141,7 @@ return [
         'value' => function($data){
             return ArrayHelper::getValue(WorkKind::find()->where(['id' => $data->work_kind_id])->one(),'name');
         },
-        'filter' => ArrayHelper::map(WorkKind::find()->all(),'id','name'),
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
@@ -166,38 +150,25 @@ return [
         'value' => function($data){
             return ArrayHelper::getValue(WorkType::find()->where(['id' => $data->work_type_id])->one(),'name');
         },
-        'filter' => ArrayHelper::map(WorkType::find()->all(),'id','name'),
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
+        'filter' => false
     ],
 
      [
          'class'=>'\kartik\grid\DataColumn',
          'attribute'=>'route',
          'hAlign' => GridView::ALIGN_CENTER,
+         'filter' => false
      ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'fuel',
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'date',
         'hAlign' => GridView::ALIGN_CENTER,
-        'filterInputOptions' => [
-            'class' => 'form-control',
-            'type' => 'date',
-            'pluginOptions' => [
-                'allowClear' => true,
-                'convertFormat'=>true,
-                'locale' => [
-                    'cancelLabel' => 'Clear',
-                    'format' => 'YYYY-MM-DD'
-                ]
-            ],],
+        'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
@@ -220,47 +191,37 @@ return [
                 return 0;
             }
         },
-        'filter' => [
-            0 => 'Резерв',
-            1 => 'Подтверждена',
-            2 => 'В работе',
-            3 => 'Завершена'
-        ],
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
+        'filter' => false
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'pay_status',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'content' => function($data){
-            if ($data->pay_status == 0){
-                return  "Не оплачено";
-            }
-            elseif ($data->pay_status == 1){
-                return  "Частично оплачено";
-            }
-            elseif ($data->pay_status == 2){
-                return  "Оплачено";
-            }
-            else{
-                return 0;
-            }
-        },
-        'filter' => [
-            0 => 'Не оплачено',
-            1 => 'Частично оплачено',
-            2 => 'Оплачено',
-        ],
-        'filterType' => GridView::FILTER_SELECT2,
-        'filterWidgetOptions' => [
-            'options' => ['prompt' => ''],
-            'pluginOptions' => ['allowClear' => true],
-        ],
-    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'pay_status',
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'content' => function($data){
+//            if ($data->pay_status == 0){
+//                return  "Не оплачено";
+//            }
+//            elseif ($data->pay_status == 1){
+//                return  "Частично оплачено";
+//            }
+//            elseif ($data->pay_status == 2){
+//                return  "Оплачено";
+//            }
+//            else{
+//                return 0;
+//            }
+//        },
+//        'filter' => [
+//            0 => 'Не оплачено',
+//            1 => 'Частично оплачено',
+//            2 => 'Оплачено',
+//        ],
+//        'filterType' => GridView::FILTER_SELECT2,
+//        'filterWidgetOptions' => [
+//            'options' => ['prompt' => ''],
+//            'pluginOptions' => ['allowClear' => true],
+//        ],
+//    ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'comment',

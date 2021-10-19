@@ -313,21 +313,6 @@ use yii\widgets\ActiveForm;
         <div class="col-md-4">
             <?= $form->field($model, 'date')->widget(\kartik\datetime\DateTimePicker::className()) ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'pay_status')->widget(Select2::classname(), [
-                'data' =>  [
-                    0 => 'Не оплачено',
-                    1 => 'Частично оплачено',
-                    2 => 'Оплачено'
-                ],
-                'language' => 'ru',
-                'options' => ['placeholder' => 'выберите статус ...'],
-                'pluginOptions' => [
-                    'allowClear' => true
-                ],
-            ]);
-            ?>
-        </div>
 
     </div>
     <div class="row">
