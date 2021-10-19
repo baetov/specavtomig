@@ -72,29 +72,41 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'garage_out',
+        'value' => function($data) {
+                $garage_out = New DateTime($data->garage_out);
+                return date_format($garage_out,'d.m.Y H:i');
+        },
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-M-Y H:i'],
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'customer_in',
+        'value' => function($data) {
+            $customer_in = New DateTime($data->customer_in);
+            return date_format($customer_in,'d.m.Y H:i');
+        },
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-M-Y H:i'],
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'customer_out',
+        'value' => function($data) {
+            $customer_out = New DateTime($data->customer_out);
+            return date_format($customer_out,'d.m.Y H:i');
+        },
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-M-Y H:i'],
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'garage_in',
+        'value' => function($data) {
+            $garage_in = New DateTime($data->garage_in);
+            return date_format($garage_in,'d.m.Y H:i');
+        },
         'hAlign' => GridView::ALIGN_CENTER,
-        'format' =>  ['date', 'd-M-Y H:i'],
         'filter' => false
     ],
     [

@@ -89,19 +89,31 @@ use yii\widgets\DetailView;
                     'fuel',
                     [
                         'attribute' => 'garage_out',
-                        'format' =>  ['date', 'd-M-Y H:i'],
+                        'value' => function($data) {
+                            $garage_out = New DateTime($data->garage_out);
+                            return date_format($garage_out,'d.m.Y H:i');
+                        },
                     ],
                     [
                         'attribute' => 'customer_in',
-                        'format' =>  ['date', 'd-M-Y H:i'],
+                        'value' => function($data) {
+                            $customer_in = New DateTime($data->customer_in);
+                            return date_format($customer_in,'d.m.Y H:i');
+                        },
                     ],
                     [
                         'attribute' => 'customer_out',
-                        'format' =>  ['date', 'd-M-Y H:i'],
+                        'value' => function($data) {
+                            $customer_out = New DateTime($data->customer_out);
+                            return date_format($customer_out,'d.m.Y H:i');
+                        },
                     ],
                     [
                         'attribute' => 'garage_in',
-                        'format' =>  ['date', 'd-M-Y H:i'],
+                        'value' => function($data) {
+                            $garage_in = New DateTime($data->garage_in);
+                            return date_format($garage_in,'d.m.Y H:i');
+                        },
                     ],
                 ],
             ]) ?>
