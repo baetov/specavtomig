@@ -42,7 +42,9 @@
         "kartik-v/yii2-widget-select2": "^2.2",
         "mihaildev/yii2-ckeditor": "^1.0",
         "andre_487/php_rutils": "^1.2",
-        "kartik-v/yii2-widget-timepicker": "dev-master"
+        "kartik-v/yii2-widget-timepicker": "dev-master",
+        "kartik-v/yii2-export": "dev-master",
+        "kartik-v/yii2-date-range": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
@@ -54,7 +56,10 @@
         "codeception/specify": "~0.4.3"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "github-oauth": {
+            "github.com": "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"
+        }
     },
     "scripts": {
         "post-create-project-cmd": [

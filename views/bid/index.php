@@ -1,5 +1,7 @@
 <?php
 
+
+use kartik\export\ExportMenu;
 use app\models\Driver;
 use app\models\Technic;
 use app\models\Client;
@@ -22,7 +24,6 @@ $this->title = 'Заявки';
 $this->params['breadcrumbs'][] = $this->title;
 
 CrudAsset::register($this);
-
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -68,7 +69,14 @@ CrudAsset::register($this);
                     ?>
                 </div>
                 <div class="col-md-3">
-                    <?= $form->field($searchModel, 'garage_out')->input('date') ?>
+                    <?= $form->field($searchModel, 'date')->widget(\kartik\daterange\DateRangePicker::className(),[
+                        'pluginOptions'=>[
+                            'locale'=>[
+                                'format'=>'D-M-Y',
+                            ],
+                            'opens'=>'left'
+                        ]
+                    ])?>
                 </div>
                 <div class="col-md-3">
                     <?= $form->field($searchModel, 'driver_id')->widget(Select2::classname(), [
@@ -81,29 +89,34 @@ CrudAsset::register($this);
                     ]);
                     ?>
                 </div>
-                <div class="col-md-3">
-                    <?= $form->field($searchModel, 'status')->widget(Select2::classname(), [
-                        'data' =>  [
-                            0 => 'Резерв',
-                            1 => 'Подтверждена',
-                            2 => 'В работе',
-                            3 => 'Завершена'
-                        ],
-                        'language' => 'ru',
-                        'options' => ['placeholder' => ''],
-                        'pluginOptions' => [
-                            'allowClear' => true
-                        ],
-                    ]);
-                    ?>
-                </div>
                 <div class="col-md-12">
                     <?= Html::a('Сбросить', ['bid/index'], ['class' => 'btn btn-default']) ?>
                     <?= Html::submitButton('Применить', ['class' => 'btn btn-success']) ?>
+                    <?php echo ExportMenu::widget([
+                        'dataProvider' => $dataProvider,
+                        'columns' => require(__DIR__.'/_columns.php'),
+                        'fontAwesome' => true,
+                        'dropdownOptions' => [
+                            'label' => 'Экспорт в Exel',
+                            'class' => 'btn btn-success'
+                        ],
+                        'showColumnSelector' => false,
+                        'clearBuffers' => true,
+                        'exportConfig' => [
+                            ExportMenu::FORMAT_TEXT => false,
+                            ExportMenu::FORMAT_HTML => false,
+                            ExportMenu::FORMAT_EXCEL => false,
+                            ExportMenu::FORMAT_CSV => false,
+                            ExportMenu::FORMAT_PDF => false,
+                        ],
+                        'showConfirmAlert' => false,
+                    ]);
+                    ?>
                 </div>
 
                 <?php ActiveForm::end() ?>
             </div>
+
         </div>
     </div>
 </div>
@@ -164,7 +177,7 @@ CrudAsset::register($this);
 </div>
 <?php Modal::begin([
     "id"=>"ajaxCrudModal",
-    'options' => ['class' => 'modal-slg'],
+    'options' => ['class' => 'modal-slg','tabindex' =>false,],
     "footer"=>"",// always need it for jquery plugin
 ])?>
 <?php Modal::end(); ?>

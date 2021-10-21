@@ -84,19 +84,12 @@ class BidSearch extends Bid
               ->andFilterWhere(['like', 'fuel', $this->fuel])
               ->andFilterWhere(['like', 'pay_form', $this->pay_form]);
         if($this->date != null){
-            $dateStart = $this->date .' '. '00'. ':'.'00'.':'.'00';
-            $dateEnd = $this->date .' '. '23'. ':'.'59'.':'.'59';
+            $dates = explode(' - ', $this->date);
+            $dateStart = new DateTime($dates[0]);
+            $dateEnd = new DateTime($dates[1]);
+            $dateStart = date_format($dateStart,'Y-m-d');
+            $dateEnd = date_format($dateEnd,'Y-m-d');
             $query->andFilterWhere(['between', 'date', $dateStart, $dateEnd]);
-        }
-        if($this->garage_out != null){
-            $dateStart = $this->garage_out .' '. '00'. ':'.'00'.':'.'00';
-            $dateEnd = $this->garage_out .' '. '23'. ':'.'59'.':'.'59';
-            $query->andFilterWhere(['between', 'garage_out', $dateStart, $dateEnd]);
-        }
-        if($this->garage_in != null){
-            $dateStart = $this->garage_in .' '. '00'. ':'.'00'.':'.'00';
-            $dateEnd = $this->garage_in .' '. '23'. ':'.'59'.':'.'59';
-            $query->andFilterWhere(['between', 'garage_in', $dateStart, $dateEnd]);
         }
 
         return $dataProvider;

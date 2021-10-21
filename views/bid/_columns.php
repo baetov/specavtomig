@@ -1,6 +1,7 @@
 <?php
 
 use app\models\Client;
+use app\models\Driver;
 use app\models\Technic;
 use app\models\TechnicType;
 use app\models\TechnicTypeSubgroup;
@@ -26,6 +27,16 @@ return [
     // ],
     [
         'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'date',
+        'value' => function($data) {
+            $date = New DateTime($data->date);
+            return date_format($date,'d.m.Y');
+        },
+        'hAlign' => GridView::ALIGN_CENTER,
+        'filter' => false
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'client_id',
         'value' => function($data){
             return ArrayHelper::getValue(Client::find()->where(['id' => $data->client_id])->one(),'name');
@@ -33,36 +44,9 @@ return [
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
-//    [
-//        'class'=>'\kartik\grid\DataColumn',
-//        'attribute'=>'technic_type_id',
-//        'value' => function($data){
-//            return ArrayHelper::getValue(TechnicType::find()->where(['id' => $data->technic_type_id])->one(),'name');
-//        },
-//        'filter' => ArrayHelper::map(TechnicType::find()->all(),'id','name'),
-//        'filterType' => GridView::FILTER_SELECT2,
-//        'filterWidgetOptions' => [
-//            'options' => ['prompt' => ''],
-//            'pluginOptions' => ['allowClear' => true],
-//        ],
-//    ],
-//    [
-//        'class'=>'\kartik\grid\DataColumn',
-//        'attribute'=>'technic_type_subgroup_id',
-//        'value' => function($data){
-//            return ArrayHelper::getValue(TechnicTypeSubgroup::find()->where(['id' => $data->technic_type_subgroup_id])->one(),'name');
-//        },
-//        'filter' => ArrayHelper::map(TechnicTypeSubgroup::find()->all(),'id','name'),
-//        'filterType' => GridView::FILTER_SELECT2,
-//        'filterWidgetOptions' => [
-//            'options' => ['prompt' => ''],
-//            'pluginOptions' => ['allowClear' => true],
-//        ],
-//    ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'technic_id',
-        'format' => 'raw',
         'hAlign' => GridView::ALIGN_CENTER,
         'value' => function($data){
             return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
@@ -71,47 +55,44 @@ return [
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'garage_out',
-        'value' => function($data) {
-                $garage_out = New DateTime($data->garage_out);
-                return date_format($garage_out,'d.m.Y H:i');
+        'attribute'=>'driver_id',
+        'value' => function($data){
+            return ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
         },
+        'filter' => false
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'garage_out',
+        'label' => 'ИЗ гаража',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'customer_in',
-        'value' => function($data) {
-            $customer_in = New DateTime($data->customer_in);
-            return date_format($customer_in,'d.m.Y H:i');
-        },
+        'label' => 'К заказчику',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'customer_out',
-        'value' => function($data) {
-            $customer_out = New DateTime($data->customer_out);
-            return date_format($customer_out,'d.m.Y H:i');
-        },
+        'label' => 'ОТ заказчика',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'garage_in',
-        'value' => function($data) {
-            $garage_in = New DateTime($data->garage_in);
-            return date_format($garage_in,'d.m.Y H:i');
-        },
+        'label' => 'В гараж',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'hours',
+        'label' => 'Часов раб',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
@@ -155,15 +136,6 @@ return [
         },
         'filter' => false
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'work_type_id',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'value' => function($data){
-            return ArrayHelper::getValue(WorkType::find()->where(['id' => $data->work_type_id])->one(),'name');
-        },
-        'filter' => false
-    ],
 
      [
          'class'=>'\kartik\grid\DataColumn',
@@ -174,35 +146,7 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'fuel',
-        'filter' => false
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'date',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => false
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'status',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'content' => function($data){
-            if ($data->status == 0){
-                return  "Резерв";
-            }
-            elseif ($data->status == 1){
-                return  "Подтверждена";
-            }
-            elseif ($data->status == 2){
-                return  "В работе";
-            }
-            elseif ($data->status == 3){
-                return  "Завершена";
-            }
-            else{
-                return 0;
-            }
-        },
+        'label' => 'Топливо',
         'filter' => false
     ],
 //    [

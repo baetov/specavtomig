@@ -22,14 +22,6 @@ return [
         'attribute'=>'name',
     ],
     [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'workTypes',
-        'content' => function($model){
-            $arr = ArrayHelper::getColumn(WorkType::find()->where(['work_kind_id' => $model->id])->all(), 'name');
-            return   implode(', ', $arr);
-        }
-    ],
-    [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,
         'vAlign'=>'middle',

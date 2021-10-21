@@ -176,17 +176,44 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
-            <?= $form->field($model, 'garage_out')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        <div class="col-md-4">
+            <?= $form->field($model, 'date')->input('date') ?>
         </div>
-        <div class="col-md-3">
-            <?= $form->field($model, 'customer_in')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        <div class="col-md-2">
+            <?= $form->field($model, 'garage_out')->widget(\kartik\time\TimePicker::className(),[
+                'pluginOptions' => [
+                    'showSeconds' => false,
+                    'showMeridian' => false,
+                    'minuteStep' => 1,
+                ]
+            ])?>
         </div>
-        <div class="col-md-3">
-            <?= $form->field($model, 'customer_out')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        <div class="col-md-2">
+            <?= $form->field($model, 'customer_in')->widget(\kartik\time\TimePicker::className(),[
+                'pluginOptions' => [
+                    'showSeconds' => false,
+                    'showMeridian' => false,
+                    'minuteStep' => 1,
+                ]
+            ])?>
         </div>
-        <div class="col-md-3">
-            <?= $form->field($model, 'garage_in')->widget(\kartik\datetime\DateTimePicker::className()) ?>
+        <div class="col-md-2">
+            <?= $form->field($model, 'customer_out')->widget(\kartik\time\TimePicker::className(),[
+                'pluginOptions' => [
+                    'showSeconds' => false,
+                    'showMeridian' => false,
+                    'minuteStep' => 1,
+                ]
+            ])?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'garage_in')->widget(\kartik\time\TimePicker::className(),[
+                'pluginOptions' => [
+                    'showSeconds' => false,
+                    'showMeridian' => false,
+                    'minuteStep' => 1,
+                ]
+            ])?>
         </div>
 
     </div>
@@ -208,7 +235,6 @@ use yii\widgets\ActiveForm;
         </div>
         <div class="col-md-2">
             <?= $form->field($model, 'pay_form')->dropDownList([
-                'Наличный расчет' => 'Наличный расчет',
                 'Б/Н Расчет + НДС' => 'Б/Н Расчет + НДС',
                 'Б/Н Расчет в.ч. НДС' => 'Б/Н Расчет в.ч. НДС'
             ]) ?>
@@ -223,67 +249,9 @@ use yii\widgets\ActiveForm;
     <div class="row">
         <div class="col-md-4">
             <?= $form->field($model, 'work_kind_id')->widget(Select2::classname(), [
-                'data' =>  ArrayHelper::map(WorkKind::find()->all(), 'id', 'name'),
-                'language' => 'ru',
-                'options' => ['placeholder' => 'выберите вид работ ...'],
-                'pluginOptions' => [
-                    'allowClear' => true
-                ],'pluginEvents' => [
-                    "change:select" => "function() {
-                            $.ajax({
-                                method: 'GET',
-                                url: '/bid/search-work?q='+$(this).val(),
-                                success: function(response){
-
-                                    var data = '';
-
-                                     $.each(response,function(key, value, i){
-                                        
-                                                data += '<option value=\''+key+'\'>';
-                                                    data += value;
-                                                data += '</option>';
-                                            });
-                                    
-                                    console.log(data);
-                                    
-                                }
-                            });
-                        }",
-                    "change" => "function() {
-                            $.ajax({
-                                method: 'GET',
-                                url: '/bid/search-work?q='+$(this).val(),
-                                success: function(response){
-
-                                    var data = '';
-                                    
-                                    var currentValue = $('#bid-work_kind_id').val();
-
-                                    $.each(response,function(key, value, i){
-                                        
-                                                data += '<option value=\''+key+'\'>';
-                                                    data += value;
-                                                data += '</option>';
-                                            });
-                                    
-                                    console.log(data);
-                                    
-                                    $('#bid-work_type_id').html(data);
-                                    
-                                    $('#bid-work_type_id').val(currentValue);
-                                    
-                                }
-                            });   
-                        }",
-                ],
-            ]);
-            ?>
-        </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'work_type_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(WorkType::find()->all(), 'id', 'name'),
                 'language' => 'ru',
-                'options' => ['placeholder' => 'выберите подгруппу видов работ ...'],
+                'options' => ['placeholder' => 'выберите  вид работ ...'],
                 'pluginOptions' => [
                     'allowClear' => true
                 ],
@@ -294,25 +262,7 @@ use yii\widgets\ActiveForm;
 
 
     <div class="row">
-        <div class="col-md-4">
-            <?= $form->field($model, 'status')->widget(Select2::classname(), [
-                'data' =>  [
-                        0 => 'Резерв',
-                        1 => 'Подтверждена',
-                        2 => 'В работе',
-                        3 => 'Завершена'
-                ],
-                'language' => 'ru',
-                'options' => ['placeholder' => 'выберите статус ...'],
-                'pluginOptions' => [
-                    'allowClear' => true
-                ],
-            ]);
-            ?>
-        </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'date')->widget(\kartik\datetime\DateTimePicker::className()) ?>
-        </div>
+
 
     </div>
     <div class="row">

@@ -52,26 +52,6 @@ use yii\widgets\DetailView;
                         }
                     ],
                     'route:ntext',
-                    [
-                        'attribute' => 'status',
-                        'value' => function($model){
-                            if ($model->status ==  0){
-                                return  "Резерв";
-                            }
-                            elseif ($model->status == 1){
-                                return  "Подтверждена";
-                            }
-                            elseif ($model->status == 2){
-                                return  "В работе";
-                            }
-                            elseif ($model->status == 3){
-                                return  "Завершена";
-                            }
-                            else{
-                                return 0;
-                            }
-                        }
-                    ],
                     'date',
                 ],
             ]) ?>

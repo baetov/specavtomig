@@ -18,25 +18,6 @@ if($model->isNewRecord == false) {
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'workTypes')->widget(MultipleInput::className(), [
-
-        'id' => 'my_id',
-        'min' => 0,
-        'columns' => [
-            [
-                'name' => 'id',
-                'options' => [
-                    'type' => 'hidden'
-                ]
-            ],
-            [
-                'name' => 'name',
-                'title' => 'Подгруппа видов работ',
-            ],
-
-
-        ],
-    ]) ?>
 
   
 	<?php if (!Yii::$app->request->isAjax){ ?>
