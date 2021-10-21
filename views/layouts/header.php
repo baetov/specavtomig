@@ -35,7 +35,7 @@ CrudAsset::register($this);
                         <li class="dropdown navbar-user">
 
                             <a id="btn-dropdown" href="javascript:;" class="dropdown-toggle" onclick="event.preventDefault(); $('#user-actions').toggle();">
-                                <img src="/<?= Yii::$app->user->identity->realAvatar ?>" style="object-fit: cover;" data-role="avatar-view" alt="">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 <span class="hidden-xs"><?=Yii::$app->user->identity->login?></span> <b class="caret"></b>
                             </a>
                             <ul id="user-actions" class="dropdown-menu animated fadeInLeft">

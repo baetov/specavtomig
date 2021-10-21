@@ -1,11 +1,6 @@
 <?php
 
-
 use app\models\Role;
-use app\models\Crew;
-use app\models\Scan;
-
-
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -14,9 +9,6 @@ use unclead\multipleinput\MultipleInput;
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
 /* @var $form yii\widgets\ActiveForm */
-if($model->isNewRecord == false) {
-    $model->listFile = ArrayHelper::getColumn(Scan::find()->where(['user_id' => $model->id])->all(), 'name');
-}
 ?>
 
 <style>
@@ -56,66 +48,8 @@ if($model->isNewRecord == false) {
                 'mask' => '+7 999 999-99-99',
             ]) ?>
             </div>
-            <div class="col-md-3">
-                <?= $form->field($model, 'file')->fileInput() ?>
-            </div>
         </div>
-        <div class="row">
-            
-        </div>
-        <div class="row" id="in" <?php if ($model->type == 0) echo 'hidden'?>>
 
-
-            <div class="col-md-3">
-                <?= $form->field($model, 'inn')->textInput() ?>
-            </div>
-        </div>
-        <div class="row" id="out" <?php if ($model->type == 0 or $model->type == 1) echo 'hidden'?>>
-            <div class="col-md-3">
-                <?= $form->field($model, 'address')->textInput() ?>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <?= $form->field($model, 'listFile')->widget(MultipleInput::className(), [
-
-                    'id' => 'my_id',
-                    'min' => 0,
-                    'columns' => [
-                        [
-                            'name' => 'id',
-                            'options' => [
-                                'type' => 'hidden'
-                            ]
-                        ],
-                        [
-                            'name' => 'name',
-                            'title' => 'Название',
-                            'enableError' => true,
-                        ],
-                        [
-                            'name' => 'file_new',
-                            'title' => 'Файл',
-                            'enableError' => true,
-                            'type'  => 'fileInput',
-                            'options' => [
-                                'pluginOptions' => [
-                                    'initialPreview'=>[
-                                        //add url here from current attribute
-                                    ],
-                                    'showPreview' => false,
-                                    'showCaption' => true,
-                                    'showRemove' => true,
-                                    'showUpload' => false,
-                                ]
-                            ]
-                        ],
-
-                    ],
-                ])->label(false) ?>
-            </div>
-        </div>
 
 
 
