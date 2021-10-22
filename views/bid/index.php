@@ -1,6 +1,7 @@
 <?php
 
 
+use kartik\daterange\DateRangePicker;
 use kartik\export\ExportMenu;
 use app\models\Driver;
 use app\models\Technic;
@@ -69,7 +70,9 @@ CrudAsset::register($this);
                     ?>
                 </div>
                 <div class="col-md-3">
-                    <?= $form->field($searchModel, 'date')->widget(\kartik\daterange\DateRangePicker::className(),[
+                    <?= $form->field($searchModel, 'date')->widget(DateRangePicker::className(),[
+                        'name'=>'date_range',
+//                        'presetDropdown'=>true,
                         'pluginOptions'=>[
                             'locale'=>[
                                 'format'=>'D-M-Y',
@@ -171,9 +174,17 @@ CrudAsset::register($this);
                         ]
                     ]) ?>
                 </div>
+                <?if (Yii::$app->user->identity->isSuperAdmin()){?>
+
+                <div class="total-sum">
+                    <p>итого часов:  <?= $totalHoursCount?></p>
+                    <p>итоговая сумма: <?= $totalCount?></p>
+                </div>
+                <?php } ?>
             </div>
         </div>
     </div>
+
 </div>
 <?php Modal::begin([
     "id"=>"ajaxCrudModal",

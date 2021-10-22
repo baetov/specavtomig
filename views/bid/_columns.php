@@ -117,13 +117,13 @@ return [
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'total',
+        'attribute'=>'pay_form',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'pay_form',
+        'attribute'=>'total',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],

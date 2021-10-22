@@ -11,7 +11,6 @@ use yii\widgets\DetailView;
             <?= DetailView::widget([
                 'model' => $model,
                 'attributes' => [
-                    'id',
                     [
                         'attribute' => 'client_id',
                         'value' => function($model){
@@ -45,14 +44,19 @@ use yii\widgets\DetailView;
                             return \yii\helpers\ArrayHelper::getValue(\app\models\WorkKind::find()->where(['id' => $model->work_kind_id])->one(),'name');
                         }
                     ],
-                    [
-                        'attribute' => 'work_type_id',
-                        'value' => function($model){
-                            return \yii\helpers\ArrayHelper::getValue(\app\models\WorkType::find()->where(['id' => $model->work_type_id])->one(),'name');
-                        }
-                    ],
                     'route:ntext',
-                    'date',
+                    [
+                        'attribute' => 'date',
+                        'value' => function($data) {
+                            $date = New DateTime($data->date);
+                            return date_format($date,'d.m.Y');
+                        },
+                    ],
+                    'garage_out',
+                    'customer_in',
+                    'customer_out',
+                    'garage_in'
+
                 ],
             ]) ?>
         </div>
@@ -67,34 +71,6 @@ use yii\widgets\DetailView;
                     'mkad_price',
                     'total',
                     'fuel',
-                    [
-                        'attribute' => 'garage_out',
-                        'value' => function($data) {
-                            $garage_out = New DateTime($data->garage_out);
-                            return date_format($garage_out,'d.m.Y H:i');
-                        },
-                    ],
-                    [
-                        'attribute' => 'customer_in',
-                        'value' => function($data) {
-                            $customer_in = New DateTime($data->customer_in);
-                            return date_format($customer_in,'d.m.Y H:i');
-                        },
-                    ],
-                    [
-                        'attribute' => 'customer_out',
-                        'value' => function($data) {
-                            $customer_out = New DateTime($data->customer_out);
-                            return date_format($customer_out,'d.m.Y H:i');
-                        },
-                    ],
-                    [
-                        'attribute' => 'garage_in',
-                        'value' => function($data) {
-                            $garage_in = New DateTime($data->garage_in);
-                            return date_format($garage_in,'d.m.Y H:i');
-                        },
-                    ],
                 ],
             ]) ?>
         </div>

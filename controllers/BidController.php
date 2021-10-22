@@ -70,10 +70,14 @@ class BidController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $dataProvider->sort->defaultOrder = ['id' => SORT_DESC];
         $dataProvider->pagination->pageSize=29;
+        $totalCount = $dataProvider->query->sum('total');
+        $totalHoursCount = $dataProvider->query->sum('hours');
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'totalCount' => $totalCount,
+            'totalHoursCount' => $totalHoursCount
         ]);
     }
 

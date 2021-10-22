@@ -89,6 +89,9 @@ class BidSearch extends Bid
             $dateEnd = new DateTime($dates[1]);
             $dateStart = date_format($dateStart,'Y-m-d');
             $dateEnd = date_format($dateEnd,'Y-m-d');
+//            if ($dateStart == $dateEnd){
+//                $query->andFilterWhere(['date' => $dateStart]);
+//            }
             $query->andFilterWhere(['between', 'date', $dateStart, $dateEnd]);
         }
 
