@@ -6,7 +6,7 @@ use app\models\TechnicType;
 use app\models\Driver;
 use app\models\TechnicTypeSubgroup;
 use app\models\WorkKind;
-use app\models\WorkType;
+//use app\models\WorkType;
 use kartik\select2\Select2;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -249,7 +249,7 @@ use yii\widgets\ActiveForm;
     <div class="row">
         <div class="col-md-4">
             <?= $form->field($model, 'work_kind_id')->widget(Select2::classname(), [
-                'data' =>  ArrayHelper::map(WorkType::find()->all(), 'id', 'name'),
+                'data' =>  ArrayHelper::map(WorkKind::find()->all(), 'id', 'name'),
                 'language' => 'ru',
                 'options' => ['placeholder' => 'выберите  вид работ ...'],
                 'pluginOptions' => [
