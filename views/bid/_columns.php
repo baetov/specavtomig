@@ -182,6 +182,15 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'comment',
     ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'author_id',
+        'value' => function($data){
+            return ArrayHelper::getValue(\app\models\User::find()->where(['id' => $data->author_id])->one(),'name');
+        },
+        'visible' => Yii::$app->user->identity->isSuperAdmin(),
+        'filter' => false
+    ],
 //     [
 //         'class'=>'\kartik\grid\DataColumn',
 //         'attribute'=>'mileage',

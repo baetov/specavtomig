@@ -12,9 +12,13 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Technic */
 /* @var $form yii\widgets\ActiveForm */
 $data = ArrayHelper::map(\app\models\TechnicTypeSubgroup::find()->all(), 'id', 'name');
-if($model->isNewRecord == false) {
-    $a = ArrayHelper::getColumn(MultiTechSubgroup::find()->where(['technic_id' => $model->id])->all(), 'subgroup_id');
-    $model->subgroups = ArrayHelper::getColumn(TechnicTypeSubgroup::find()->where(['id' => $a])->all(), 'name');
+if($model->isNewRecord == false ) {
+////    ArrayHelper::map(\app\models\TechnicTypeSubgroup::find()->where(['technic_type_id' => $model->type_id])->all(), 'id', 'name');
+//    $a = ArrayHelper::getColumn(MultiTechSubgroup::find()->where(['technic_id' => $model->id])->all(), 'subgroup_id');
+//    $model->subgroups = ArrayHelper::getColumn(TechnicTypeSubgroup::find()->where(['id' => $a])->all(), 'name');
+
+    $model->subgroups = ArrayHelper::getColumn(MultiTechSubgroup::find()->where(['technic_id' => $model->id])->all(), 'subgroup_id');
+    $model->subgroups = ArrayHelper::getColumn(TechnicTypeSubgroup::find()->where(['id' => $model->subgroups])->all(), 'name');
 }
 ?>
 

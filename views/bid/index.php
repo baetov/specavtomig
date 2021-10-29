@@ -1,6 +1,7 @@
 <?php
 
 
+use app\models\User;
 use kartik\daterange\DateRangePicker;
 use kartik\export\ExportMenu;
 use app\models\Driver;
@@ -92,6 +93,19 @@ CrudAsset::register($this);
                     ]);
                     ?>
                 </div>
+                <?if (Yii::$app->user->identity->isSuperAdmin()){?>
+                    <div class="col-md-3">
+                        <?= $form->field($searchModel, 'author_id')->widget(Select2::classname(), [
+                            'data' =>  ArrayHelper::map(User::find()->all(), 'id', 'name'),
+                            'language' => 'ru',
+                            'options' => ['placeholder' => ''],
+                            'pluginOptions' => [
+                                'allowClear' => true
+                            ],
+                        ]);
+                        ?>
+                    </div>
+                <?php } ?>
                 <div class="col-md-12">
                     <?= Html::a('Сбросить', ['bid/index'], ['class' => 'btn btn-default']) ?>
                     <?= Html::submitButton('Применить', ['class' => 'btn btn-success']) ?>
@@ -175,7 +189,6 @@ CrudAsset::register($this);
                     ]) ?>
                 </div>
                 <?if (Yii::$app->user->identity->isSuperAdmin()){?>
-
                 <div class="total-sum">
                     <p>итого часов:  <?= $totalHoursCount?></p>
                     <p>итоговая сумма: <?= $totalCount?></p>

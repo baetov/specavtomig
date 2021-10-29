@@ -18,7 +18,7 @@ class ReserveBidSearch extends ReserveBid
     public function rules()
     {
         return [
-            [['id', 'client_id', 'technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'driver_id'], 'integer'],
+            [['id', 'client_id', 'technic_type_id','author_id','technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'driver_id'], 'integer'],
             [['date', 'time', 'route', 'pay_form', 'price', 'hours', 'mkad', 'mkad_price', 'total', 'comment'], 'safe'],
         ];
     }
@@ -64,6 +64,7 @@ class ReserveBidSearch extends ReserveBid
             'work_kind_id' => $this->work_kind_id,
             'date' => $this->date,
             'driver_id' => $this->driver_id,
+            'author_id' => $this->author_id,
         ]);
 
         $query->andFilterWhere(['like', 'time', $this->time])

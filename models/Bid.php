@@ -26,6 +26,7 @@ use Yii;
  * @property int $total Итого
  * @property int $fuel Топливо выдано
  * @property int $mileage Общий пробег
+ * @property int $author_id автор
  * @property string $garage_out Выезд из гаража
  * @property string $garage_in Возвращение в гараж
  * @property string $customer_in Прибыл к заказчику
@@ -56,7 +57,7 @@ class Bid extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['client_id', 'technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'driver_id', 'status', 'pay_status', 'mileage'], 'integer'],
+            [['client_id', 'technic_type_id','author_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'driver_id', 'status', 'pay_status', 'mileage'], 'integer'],
             [['date', 'garage_out', 'garage_in', 'customer_in', 'customer_out','comment'], 'safe'],
             [['route', 'price', 'hours', 'mkad', 'mkad_price', 'total', 'fuel'], 'string'],
             [['pay_form'], 'string', 'max' => 255],
@@ -99,7 +100,8 @@ class Bid extends \yii\db\ActiveRecord
             'garage_in' => 'Возвращение в гараж',
             'customer_in' => 'Прибыл к заказчику',
             'customer_out' => 'Убыл от заказчика',
-            'comment' => 'Комментарии'
+            'comment' => 'Комментарии',
+            'author_id' => 'Автор'
         ];
     }
 
@@ -117,6 +119,13 @@ class Bid extends \yii\db\ActiveRecord
     public function getTechnic()
     {
         return $this->hasOne(Technic::className(), ['id' => 'technic_id']);
+    }
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getAuthor()
+    {
+        return $this->hasOne(User::className(), ['id' => 'author_id']);
     }
 
     /**

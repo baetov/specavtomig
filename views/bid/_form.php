@@ -15,6 +15,77 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model app\models\Bid */
 /* @var $form yii\widgets\ActiveForm */
+$priceSum = <<<JS
+            let hours = document.getElementById("bid-hours").value;
+            let hoursPrice = $(this).val();
+            let mkadMileage = document.getElementById("bid-mkad").value;
+            let mkadPrice = document.getElementById("bid-mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+            if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-total").value = total;
+JS;
+$mkadSum = <<<JS
+            let hours = document.getElementById("bid-hours").value;
+            let hoursPrice = document.getElementById("bid-price").value;
+            let mkadMileage = document.getElementById("bid-mkad").value;
+            let mkadPrice = $(this).val();
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-total").value = total;
+JS;
+$mkad = <<<JS
+            let hours = document.getElementById("bid-hours").value;
+            let hoursPrice = document.getElementById("bid-price").value;
+            let mkadMileage = $(this).val();
+            let mkadPrice = document.getElementById("bid-mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-total").value = total;   
+JS;
+$hours = <<<JS
+            let hours = $(this).val();
+            let hoursPrice = document.getElementById("bid-price").value;
+            let mkadMileage = document.getElementById("bid-mkad").value;
+            let mkadPrice = document.getElementById("bid-mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-total").value = total;
+JS;
+$hours = <<<JS
+            let hours = $(this).val();
+            let hoursPrice = document.getElementById("bid-price").value;
+            let mkadMileage = $(this).val();
+            let mkadPrice = document.getElementById("bid-mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-total").value = total;
+JS;
+$nds = <<<JS
+        let ndsVal = $(this).val();
+        if (ndsVal == "Б/Н Расчет + НДС"){
+            let totalVal = document.getElementById("bid-total").value;
+            let total = +totalVal*1.2 ;
+            document.getElementById("bid-total").value = total;
+        }
+        if (ndsVal == "Б/Н Расчет в.ч. НДС"){
+            let hours = document.getElementById("bid-hours").value;
+            let hoursPrice = document.getElementById("bid-price").value;
+            let mkadMileage = document.getElementById("bid-mkad").value;
+            let mkadPrice = document.getElementById("bid-mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+            document.getElementById("bid-total").value = total;
+        }
+JS;
 ?>
 
 <div class="bid-form">
@@ -22,7 +93,10 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
+            <?= $form->field($model, 'date')->input('date') ?>
+        </div>
+        <div class="col-md-3">
             <?= $form->field($model, 'client_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(Client::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -32,7 +106,7 @@ use yii\widgets\ActiveForm;
                 ],
             ]) ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <?= $form->field($model, 'technic_type_id')->widget(Select2::classname(), [
                 'data' => ArrayHelper::map(TechnicType::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -89,7 +163,7 @@ use yii\widgets\ActiveForm;
             ]);
             ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <?= $form->field($model, 'technic_type_subgroup_id')->widget(Select2::classname(), [
                 'data' =>  ArrayHelper::map(TechnicTypeSubgroup::find()->all(), 'id', 'name'),
                 'language' => 'ru',
@@ -176,10 +250,7 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
-            <?= $form->field($model, 'date')->input('date') ?>
-        </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <?= $form->field($model, 'garage_out')->widget(\kartik\time\TimePicker::className(),[
                 'pluginOptions' => [
                     'showSeconds' => false,
@@ -188,7 +259,7 @@ use yii\widgets\ActiveForm;
                 ]
             ])?>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <?= $form->field($model, 'customer_in')->widget(\kartik\time\TimePicker::className(),[
                 'pluginOptions' => [
                     'showSeconds' => false,
@@ -197,7 +268,7 @@ use yii\widgets\ActiveForm;
                 ]
             ])?>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <?= $form->field($model, 'customer_out')->widget(\kartik\time\TimePicker::className(),[
                 'pluginOptions' => [
                     'showSeconds' => false,
@@ -206,7 +277,7 @@ use yii\widgets\ActiveForm;
                 ]
             ])?>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <?= $form->field($model, 'garage_in')->widget(\kartik\time\TimePicker::className(),[
                 'pluginOptions' => [
                     'showSeconds' => false,
@@ -219,25 +290,25 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="row">
         <div class="col-md-2">
-            <?= $form->field($model, 'hours')->textInput() ?>
+            <?= $form->field($model, 'hours')->textInput(['onchange' => $hours]) ?>
         </div>
         <div class="col-md-2">
-            <?= $form->field($model, 'price')->textInput() ?>
+            <?= $form->field($model, 'price')->textInput(['onchange' => $priceSum]) ?>
         </div>
         <div class="col-md-2">
-            <?= $form->field($model, 'mkad')->textInput() ?>
+            <?= $form->field($model, 'mkad')->textInput(['onchange' => $mkad]) ?>
         </div>
         <div class="col-md-2">
-            <?= $form->field($model, 'mkad_price')->textInput() ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'total')->textInput() ?>
+            <?= $form->field($model, 'mkad_price')->textInput(['onchange' => $mkadSum]) ?>
         </div>
         <div class="col-md-2">
             <?= $form->field($model, 'pay_form')->dropDownList([
+                'Б/Н Расчет в.ч. НДС' => 'Б/Н Расчет в.ч. НДС',
                 'Б/Н Расчет + НДС' => 'Б/Н Расчет + НДС',
-                'Б/Н Расчет в.ч. НДС' => 'Б/Н Расчет в.ч. НДС'
-            ]) ?>
+            ],['id' => 'nds','onchange' => $nds]) ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'total')->textInput() ?>
         </div>
     </div>
     <div class="row">
@@ -260,11 +331,6 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 
-
-    <div class="row">
-
-
-    </div>
     <div class="row">
         <div class="col-md-12">
         <?= $form->field($model, 'comment')->textarea(['rows' => 6]) ?>

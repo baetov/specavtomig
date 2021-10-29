@@ -24,6 +24,7 @@ use Yii;
  * @property string $mkad_price Цена за км
  * @property string $total Итого
  * @property string $comment Коментарии
+ * @property int $author_id автор
  *
  * @property Client $client
  * @property Driver $driver
@@ -48,7 +49,7 @@ class ReserveBid extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['client_id', 'technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'driver_id'], 'integer'],
+            [['client_id', 'technic_type_id','author_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'driver_id'], 'integer'],
             [['date'], 'safe'],
             [['route', 'comment'], 'string'],
             [['time', 'pay_form', 'price', 'hours', 'mkad', 'mkad_price', 'total'], 'string', 'max' => 255],
@@ -84,6 +85,7 @@ class ReserveBid extends \yii\db\ActiveRecord
             'mkad_price' => 'Цена за КМ',
             'total' => 'Итого',
             'comment' => 'Коментарии',
+            'author_id' => 'Автор'
         ];
     }
 
@@ -101,6 +103,13 @@ class ReserveBid extends \yii\db\ActiveRecord
     public function getDriver()
     {
         return $this->hasOne(Driver::className(), ['id' => 'driver_id']);
+    }
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getAuthor()
+    {
+        return $this->hasOne(User::className(), ['id' => 'author_id']);
     }
 
     /**
