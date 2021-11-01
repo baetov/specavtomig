@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\behaviors\BlameableBehavior;
 
 /**
  * This is the model class for table "bid".
@@ -67,6 +68,26 @@ class Bid extends \yii\db\ActiveRecord
             [['technic_type_subgroup_id'], 'exist', 'skipOnError' => true, 'targetClass' => TechnicTypeSubgroup::className(), 'targetAttribute' => ['technic_type_subgroup_id' => 'id']],
             [['work_kind_id'], 'exist', 'skipOnError' => true, 'targetClass' => WorkKind::className(), 'targetAttribute' => ['work_kind_id' => 'id']],
             [['work_type_id'], 'exist', 'skipOnError' => true, 'targetClass' => WorkType::className(), 'targetAttribute' => ['work_type_id' => 'id']],
+        ];
+    }
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+//            [
+//                'class' => TimestampBehavior::className(),
+//                'updatedAtAttribute' => 'updated_at',
+//                'createdAtAttribute' => 'created_at',
+//                'value' => date('Y-m-d H:i:s'),
+//            ],
+            [
+                'class' => BlameableBehavior::className(),
+                'updatedByAttribute' => null,
+                'createdByAttribute' => 'author_id',
+                'value' => Yii::$app->user->id
+            ],
         ];
     }
 
