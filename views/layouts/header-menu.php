@@ -13,7 +13,7 @@ use yii\helpers\Url;
                 'items' => [
                         ['label' => 'Заявки', 'icon' => 'fa fa-file-text', 'url' => ['/bid'],],
                         ['label' => 'Резервные заявки', 'icon' => 'fa fa-file-text', 'url' => ['/reserve-bid'],],
-                        ['label' => 'Справочники', 'icon' => 'fa fa-list-ul', 'url' => '/user', 'options' => ['class' => 'has-sub'],
+                        ['label' => 'Справочники', 'icon' => 'fa fa-list-ul', 'url' => '/client', 'options' => ['class' => 'has-sub'],
                         'items' => [
 //                            ['label' => 'Пользователи', 'icon' => 'fa  fa-user-o', 'url' => ['/user'],],
 //                            ['label' => 'Роли', 'icon' => 'fa fa-address-card', 'url' => ['/role'],],

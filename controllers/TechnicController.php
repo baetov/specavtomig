@@ -43,12 +43,12 @@ class TechnicController extends Controller
                     'bulk-delete' => ['post'],
                 ],
             ],
-            'role' => [
-                'class' => RoleBehavior::class,
-                'actions' => [
-                    'index' => 'directory_access',
-                ],
-            ],
+//            'role' => [
+//                'class' => RoleBehavior::class,
+//                'actions' => [
+//                    'index' => 'directory_access',
+//                ],
+//            ],
         ];
     }
 
