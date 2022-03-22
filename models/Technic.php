@@ -15,7 +15,9 @@ use Yii;
  * @property string $equipment Останстка
  * @property int $type_id Тип техники
  * @property int $subgroup_id Подгруппа типа техники
- * * @property array $subgroups Подгруппа типа техники
+ * @property array $subgroups Подгруппа типа техники
+ * @property int reserved_by
+ * @property boolean reserve
  *
  * @property TechnicTypeSubgroup $subgroup
  * @property TechnicType $type
@@ -37,8 +39,8 @@ class Technic extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type_id', 'subgroup_id'], 'integer'],
-            [['subgroups'],'safe'],
+            [['type_id', 'subgroup_id','reserved_by'], 'integer'],
+            [['subgroups','reserve'],'safe'],
             [['name', 'model', 'gos_num', 'characteristics', 'equipment'], 'string', 'max' => 255],
 //            [['subgroup_id'], 'exist', 'skipOnError' => true, 'targetClass' => TechnicTypeSubgroup::className(), 'targetAttribute' => ['subgroup_id' => 'id']],
             [['type_id'], 'exist', 'skipOnError' => true, 'targetClass' => TechnicType::className(), 'targetAttribute' => ['type_id' => 'id']],
@@ -59,6 +61,8 @@ class Technic extends \yii\db\ActiveRecord
             'equipment' => 'Останстка',
             'type_id' => 'Тип техники',
             'subgroups' => 'Подгруппа типа техники',
+            'reserved_by' => 'Занял',
+            'reserve' => 'Занят/Свободен'
         ];
     }
     public function afterSave($insert, $changedAttributes)

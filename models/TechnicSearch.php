@@ -18,8 +18,8 @@ class TechnicSearch extends Technic
     public function rules()
     {
         return [
-            [['id', 'type_id'], 'integer'],
-            [['name', 'model', 'gos_num', 'characteristics', 'equipment'], 'safe'],
+            [['id', 'type_id','reserved_by'], 'integer'],
+            [['name', 'model', 'gos_num', 'characteristics', 'equipment','reserve'], 'safe'],
         ];
     }
 
@@ -58,6 +58,8 @@ class TechnicSearch extends Technic
         $query->andFilterWhere([
             'id' => $this->id,
             'type_id' => $this->type_id,
+            'reserve' => $this->reserved,
+            'reserved_by' => $this->reserved_by
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

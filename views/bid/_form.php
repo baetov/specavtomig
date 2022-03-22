@@ -21,6 +21,7 @@ $priceSum = <<<JS
             let mkadMileage = document.getElementById("bid-mkad").value;
             let mkadPrice = document.getElementById("bid-mkad_price").value;
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+            
             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
                 total = total*1.2;
             }
@@ -62,7 +63,7 @@ JS;
 $hours = <<<JS
             let hours = $(this).val();
             let hoursPrice = document.getElementById("bid-price").value;
-            let mkadMileage = $(this).val();
+            let mkadMileage = document.getElementById("bid-mkad").value;
             let mkadPrice = document.getElementById("bid-mkad_price").value;
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
              if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
@@ -102,7 +103,7 @@ JS;
                 'language' => 'ru',
                 'options' => ['placeholder' => 'выберите Контрагента ...'],
                 'pluginOptions' => [
-                    'allowClear' => true
+                    'allowClear' => true,
                 ],
             ]) ?>
         </div>
@@ -256,6 +257,7 @@ JS;
                     'showSeconds' => false,
                     'showMeridian' => false,
                     'minuteStep' => 1,
+                    'defaultTime' => false
                 ]
             ])?>
         </div>
@@ -265,6 +267,7 @@ JS;
                     'showSeconds' => false,
                     'showMeridian' => false,
                     'minuteStep' => 1,
+                    'defaultTime' => false
                 ]
             ])?>
         </div>
@@ -274,6 +277,7 @@ JS;
                     'showSeconds' => false,
                     'showMeridian' => false,
                     'minuteStep' => 1,
+                    'defaultTime' => false
                 ]
             ])?>
         </div>
@@ -283,6 +287,7 @@ JS;
                     'showSeconds' => false,
                     'showMeridian' => false,
                     'minuteStep' => 1,
+                    'defaultTime' => false
                 ]
             ])?>
         </div>

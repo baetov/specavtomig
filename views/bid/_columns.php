@@ -11,6 +11,8 @@ use kartik\grid\GridView;
 use kartik\date\DatePicker;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
+use yii\helpers\Html;
+
 
 return [
     [
@@ -29,11 +31,16 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'date',
         'value' => function($data) {
-            $date = New DateTime($data->date);
-            return date_format($date,'d.m.Y');
+            if($data->date == null){
+                return Html::tag('div', 'Необходимо задать дату!', ['style' => ['color' => 'red']]);
+            }else{
+                $date = New DateTime($data->date);
+                return date_format($date,'d.m.Y');
+            }
         },
         'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => false
+        'filter' => false,
+        'format' => 'html'
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
@@ -46,49 +53,72 @@ return [
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'technic_id',
-        'hAlign' => GridView::ALIGN_CENTER,
+        'label'=>'Техника и ваодитель',
         'value' => function($data){
-            return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
+            $tech = ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
+            $driver = ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
+            return "$tech  <br> $driver";
         },
+        'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false,
+        'format' => 'html'
     ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'technic_id',
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'value' => function($data){
+//            return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
+//        },
+//        'filter' => false,
+//    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'driver_id',
+//        'value' => function($data){
+//            return ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
+//        },
+//        'filter' => false
+//    ],
+
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'driver_id',
+        'label'=>'Время',
         'value' => function($data){
-            return ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
+            return "$data->garage_out  <br> $data->customer_in <br><br> $data->customer_out <br> $data->garage_in";
         },
-        'filter' => false
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'garage_out',
-        'label' => 'ИЗ гаража',
         'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => false
+        'filter' => false,
+        'format' => 'html'
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'customer_in',
-        'label' => 'К заказчику',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => false
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'customer_out',
-        'label' => 'ОТ заказчика',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => false
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'garage_in',
-        'label' => 'В гараж',
-        'hAlign' => GridView::ALIGN_CENTER,
-        'filter' => false
-    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'garage_out',
+//        'label' => 'ИЗ гаража',
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'filter' => false
+//    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'customer_in',
+//        'label' => 'К заказчику',
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'filter' => false
+//    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'customer_out',
+//        'label' => 'ОТ заказчика',
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'filter' => false
+//    ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'attribute'=>'garage_in',
+//        'label' => 'В гараж',
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'filter' => false
+//    ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'hours',
@@ -186,23 +216,37 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'author_id',
         'value' => function($data){
-            return ArrayHelper::getValue(\app\models\User::find()->where(['id' => $data->author_id])->one(),'name');
+            $author = ArrayHelper::getValue(\app\models\User::find()->where(['id' => $data->author_id])->one(),'name');
+            if($data->updated_by !== null){
+                $updatedBy = ArrayHelper::getValue(\app\models\User::find()->where(['id' => $data->updated_by])->one(),'name');
+                $updatedAt = New DateTime($data->updated_at);
+                $updatedAt = date_format($updatedAt,'d-m-Y H:i:s');
+                return "Cоздал: <br >$author <br> внес изменения: <br> $updatedBy <br> $updatedAt";
+            }else{
+                return $author;
+            }
         },
         'visible' => Yii::$app->user->identity->isSuperAdmin(),
-        'filter' => false
+        'filter' => false,
+        'format' => 'html'
     ],
 //     [
 //         'class'=>'\kartik\grid\DataColumn',
 //         'attribute'=>'mileage',
 //     ],
-
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,
         'vAlign'=>'middle',
-        'urlCreator' => function($action, $model, $key, $index) {
-            return Url::to([$action,'id'=>$key]);
-        },
+        'template' => '{view} {update} {delete} {clone}',
+
+        'buttons' => [
+             'clone' => function ($url,$model,$key) {
+                return Html::a(
+                    '<i class="fa fa-clone" style="color: red" aria-hidden="true"></i>',[$url,'containerPjaxReload'=>'#pjax-container'],['role'=>'modal-remote','title'=>'Клон','data-toggle'=>'tooltip']
+                    );
+            },
+        ],
         'viewOptions'=>['role'=>'modal-remote','title'=>'Просмотр','data-toggle'=>'tooltip'],
         'updateOptions'=>['role'=>'modal-remote','title'=>'Изменить', 'data-toggle'=>'tooltip'],
         'deleteOptions'=>['role'=>'modal-remote','title'=>'Удалить',
@@ -212,5 +256,22 @@ return [
             'data-confirm-title'=>'Удаление',
             'data-confirm-message'=>'Вы действительно хотите удалить данный элемент?'],
     ],
+
+//    [
+//        'class' => 'kartik\grid\ActionColumn',
+//        'dropdown' => false,
+//        'vAlign'=>'middle',
+//        'urlCreator' => function($action, $model, $key, $index) {
+//            return Url::to([$action,'id'=>$key]);
+//        },
+//        'viewOptions'=>['role'=>'modal-remote','title'=>'Просмотр','data-toggle'=>'tooltip'],
+//        'updateOptions'=>['role'=>'modal-remote','title'=>'Изменить', 'data-toggle'=>'tooltip'],
+//        'deleteOptions'=>['role'=>'modal-remote','title'=>'Удалить',
+//            'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
+//            'data-request-method'=>'post',
+//            'data-toggle'=>'tooltip',
+//            'data-confirm-title'=>'Удаление',
+//            'data-confirm-message'=>'Вы действительно хотите удалить данный элемент?'],
+//    ],
 
 ];   

@@ -17,6 +17,7 @@ use kartik\grid\GridView;
 use johnitvn\ajaxcrud\CrudAsset; 
 use johnitvn\ajaxcrud\BulkButtonWidget;
 use yii\widgets\ActiveForm;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\BidSearch */
@@ -27,6 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 CrudAsset::register($this);
 ?>
+<?php Pjax::begin(['id' => 'pjax-container', 'enablePushState' => false]); ?>
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-inverse">
@@ -199,6 +201,7 @@ CrudAsset::register($this);
     </div>
 
 </div>
+<?php Pjax::end() ?>
 <?php Modal::begin([
     "id"=>"ajaxCrudModal",
     'options' => ['class' => 'modal-slg','tabindex' =>false,],

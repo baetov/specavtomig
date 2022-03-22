@@ -256,6 +256,31 @@ class BidController extends Controller
 
     }
 
+    public function actionClone($id, $containerPjaxReload = '#crud-datatable-pjax'){
+        $request = Yii::$app->request;
+        $oldModel = $this->findModel($id);
+        $newModel = new Bid();
+        $newModel->attributes = $oldModel->attributes;
+        $newModel->id = null;
+        $newModel->date = null;
+        $newModel->save();
+
+
+        if($request->isAjax){
+            /*
+            *   Process for ajax request
+            */
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ['forceClose'=>true,'forceReload'=>$containerPjaxReload];
+        }else{
+            /*
+            *   Process for non-ajax request
+            */
+            return $this->redirect(['index']);
+        }
+
+    }
+
      /**
      * Delete multiple existing Bid model.
      * For ajax request will return json object

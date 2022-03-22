@@ -22,7 +22,7 @@ class BidSearch extends Bid
     {
         return [
             [['id','driver_id', 'client_id', 'author_id','technic_type_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'status', 'pay_status', 'price', 'mileage'], 'integer'],
-            [['date', 'route', 'pay_form', 'garage_out', 'garage_in', 'customer_in', 'customer_out','hours', 'mkad', 'mkad_price', 'total', 'fuel'], 'safe'],
+            [['date', 'route', 'pay_form', 'garage_out', 'garage_in', 'customer_in', 'customer_out','hours', 'mkad', 'mkad_price', 'total', 'fuel','updated_by','updated_at'], 'safe'],
         ];
     }
 
@@ -74,6 +74,8 @@ class BidSearch extends Bid
             'garage_in' => $this->garage_in,
             'customer_in' => $this->customer_in,
             'customer_out' => $this->customer_out,
+            'updated_by' => $this->updated_by,
+            'updated_at' => $this->updated_at
         ]);
 
         $query->andFilterWhere(['like', 'route', $this->route])
