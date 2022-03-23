@@ -22,7 +22,7 @@ $priceSum = <<<JS
             let mkadPrice = document.getElementById("bid-mkad_price").value;
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
             
-            if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+            if (document.getElementById("nds").value == "+ НДС"){
                 total = total*1.2;
             }
             document.getElementById("bid-total").value = total;
@@ -33,7 +33,7 @@ $mkadSum = <<<JS
             let mkadMileage = document.getElementById("bid-mkad").value;
             let mkadPrice = $(this).val();
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
-             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+             if (document.getElementById("nds").value == "+ НДС"){
                 total = total*1.2;
             }
             document.getElementById("bid-total").value = total;
@@ -44,7 +44,7 @@ $mkad = <<<JS
             let mkadMileage = $(this).val();
             let mkadPrice = document.getElementById("bid-mkad_price").value;
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
-             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+             if (document.getElementById("nds").value == "+ НДС"){
                 total = total*1.2;
             }
             document.getElementById("bid-total").value = total;   
@@ -55,7 +55,7 @@ $hours = <<<JS
             let mkadMileage = document.getElementById("bid-mkad").value;
             let mkadPrice = document.getElementById("bid-mkad_price").value;
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
-             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+             if (document.getElementById("nds").value == "+ НДС"){
                 total = total*1.2;
             }
             document.getElementById("bid-total").value = total;
@@ -66,19 +66,19 @@ $hours = <<<JS
             let mkadMileage = document.getElementById("bid-mkad").value;
             let mkadPrice = document.getElementById("bid-mkad_price").value;
             let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
-             if (document.getElementById("nds").value == "Б/Н Расчет + НДС"){
+             if (document.getElementById("nds").value == "+ НДС"){
                 total = total*1.2;
             }
             document.getElementById("bid-total").value = total;
 JS;
 $nds = <<<JS
         let ndsVal = $(this).val();
-        if (ndsVal == "Б/Н Расчет + НДС"){
+        if (ndsVal == "+ НДС"){
             let totalVal = document.getElementById("bid-total").value;
             let total = +totalVal*1.2 ;
             document.getElementById("bid-total").value = total;
         }
-        if (ndsVal == "Б/Н Расчет в.ч. НДС"){
+        if (ndsVal == "в.ч. НДС"){
             let hours = document.getElementById("bid-hours").value;
             let hoursPrice = document.getElementById("bid-price").value;
             let mkadMileage = document.getElementById("bid-mkad").value;
@@ -308,8 +308,8 @@ JS;
         </div>
         <div class="col-md-2">
             <?= $form->field($model, 'pay_form')->dropDownList([
-                'Б/Н Расчет в.ч. НДС' => 'Б/Н Расчет в.ч. НДС',
-                'Б/Н Расчет + НДС' => 'Б/Н Расчет + НДС',
+                'в.ч. НДС' => 'в.ч. НДС',
+                '+ НДС' => '+ НДС',
             ],['id' => 'nds','onchange' => $nds]) ?>
         </div>
         <div class="col-md-2">

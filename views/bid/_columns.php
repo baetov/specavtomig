@@ -51,41 +51,41 @@ return [
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
+//    [
+//        'class'=>'\kartik\grid\DataColumn',
+//        'label'=>'Техника и водитель',
+//        'value' => function($data){
+//            $tech = ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
+//            $driver = ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
+//            return "$tech  <br> $driver";
+//        },
+//        'hAlign' => GridView::ALIGN_CENTER,
+//        'filter' => false,
+//        'format' => 'html'
+//    ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'label'=>'Техника и ваодитель',
-        'value' => function($data){
-            $tech = ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
-            $driver = ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
-            return "$tech  <br> $driver";
-        },
+        'attribute'=>'technic_id',
         'hAlign' => GridView::ALIGN_CENTER,
+        'value' => function($data){
+            return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
+        },
         'filter' => false,
-        'format' => 'html'
     ],
-//    [
-//        'class'=>'\kartik\grid\DataColumn',
-//        'attribute'=>'technic_id',
-//        'hAlign' => GridView::ALIGN_CENTER,
-//        'value' => function($data){
-//            return ArrayHelper::getValue(Technic::find()->where(['id' => $data->technic_id])->one(),'name');
-//        },
-//        'filter' => false,
-//    ],
-//    [
-//        'class'=>'\kartik\grid\DataColumn',
-//        'attribute'=>'driver_id',
-//        'value' => function($data){
-//            return ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
-//        },
-//        'filter' => false
-//    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'driver_id',
+        'value' => function($data){
+            return ArrayHelper::getValue(Driver::find()->where(['id' => $data->driver_id])->one(),'name');
+        },
+        'filter' => false
+    ],
 
     [
         'class'=>'\kartik\grid\DataColumn',
         'label'=>'Время',
         'value' => function($data){
-            return "$data->garage_out  <br> $data->customer_in <br><br> $data->customer_out <br> $data->garage_in";
+            return "$data->garage_out  <br> <span style='background-color:#abf0dd'>$data->customer_in</span> <br><br> <span style='background-color:#abf0dd'>$data->customer_out</span> <br> $data->garage_in";
         },
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false,
@@ -122,13 +122,14 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'hours',
-        'label' => 'Часов раб',
+        'label' => 'час/р',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'price',
+        'label' => 'цен./ч',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
@@ -136,18 +137,21 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'mkad',
+        'label' => 'км',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'mkad_price',
+        'label' => 'цен./км',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'pay_form',
+        'label' => 'тип ндс',
         'hAlign' => GridView::ALIGN_CENTER,
         'filter' => false
     ],

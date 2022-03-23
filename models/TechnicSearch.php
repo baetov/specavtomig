@@ -58,7 +58,7 @@ class TechnicSearch extends Technic
         $query->andFilterWhere([
             'id' => $this->id,
             'type_id' => $this->type_id,
-            'reserve' => $this->reserved,
+            'reserve' => $this->reserve,
             'reserved_by' => $this->reserved_by
         ]);
 
