@@ -272,6 +272,68 @@ class TechnicController extends Controller
         }
        
     }
+    public function actionTake($id, $containerPjaxReload = '#crud-datatable-pjax')
+    {
+        $request = Yii::$app->request;
+        $model = $this->findModel($id);
+        $model->reserve = true;
+        $model->reserved_by = Yii::$app->user->identity->id;
+        $model->save();
+
+        if($request->isAjax){
+            /*
+            *   Process for ajax request
+            */
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ['forceClose'=>true,'forceReload'=>$containerPjaxReload];
+        }else{
+            /*
+            *   Process for non-ajax request
+            */
+            return $this->redirect(['index']);
+        }
+
+    }
+    public function actionFree($id, $containerPjaxReload = '#crud-datatable-pjax')
+    {
+        $request = Yii::$app->request;
+        $model = $this->findModel($id);
+        $model->reserve = false;
+        $model->reserved_by = null;
+        $model->save();
+
+        if($request->isAjax){
+            /*
+            *   Process for ajax request
+            */
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ['forceClose'=>true,'forceReload'=>$containerPjaxReload];
+        }else{
+            /*
+            *   Process for non-ajax request
+            */
+            return $this->redirect(['index']);
+        }
+    }
+    public function actionClear($containerPjaxReload = '#crud-datatable-pjax')
+    {
+        $request = Yii::$app->request;
+        $models = Technic::updateAll(['reserve' => false,'reserved_by' => null]);
+        if($request->isAjax){
+            /*
+            *   Process for ajax request
+            */
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ['forceClose'=>true,'forceReload'=>$containerPjaxReload];
+        }else{
+            /*
+            *   Process for non-ajax request
+            */
+            return $this->redirect(['index']);
+        }
+
+
+    }
 
     /**
  * @param string $q

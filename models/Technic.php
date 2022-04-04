@@ -61,7 +61,7 @@ class Technic extends \yii\db\ActiveRecord
             'equipment' => 'Останстка',
             'type_id' => 'Тип техники',
             'subgroups' => 'Подгруппа типа техники',
-            'reserved_by' => 'Занял',
+            'reserved_by' => 'Кто занял',
             'reserve' => 'Занят/Свободен'
         ];
     }

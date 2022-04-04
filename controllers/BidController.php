@@ -263,6 +263,12 @@ class BidController extends Controller
         $newModel->attributes = $oldModel->attributes;
         $newModel->id = null;
         $newModel->date = null;
+        $newModel->customer_out = null;
+        $newModel->garage_in = null;
+        $newModel->hours = null;
+        $newModel->mkad = null;
+        $newModel->mkad_price = null;
+        $newModel->total = null;
         $newModel->save();
 
 

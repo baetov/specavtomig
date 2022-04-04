@@ -224,8 +224,8 @@ return [
             if($data->updated_by !== null){
                 $updatedBy = ArrayHelper::getValue(\app\models\User::find()->where(['id' => $data->updated_by])->one(),'name');
                 $updatedAt = New DateTime($data->updated_at);
-                $updatedAt = date_format($updatedAt,'d-m-Y H:i:s');
-                return "Cоздал: <br >$author <br> внес изменения: <br> $updatedBy <br> $updatedAt";
+                $updatedAt = date_format($updatedAt,'d-m H:i');
+                return "Cоздал: <br >$author <br> Изменил: <br> $updatedBy <br> $updatedAt";
             }else{
                 return $author;
             }

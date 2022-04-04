@@ -5,6 +5,7 @@ use yii\bootstrap\Modal;
 use kartik\grid\GridView;
 use johnitvn\ajaxcrud\CrudAsset; 
 use johnitvn\ajaxcrud\BulkButtonWidget;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\TechnicSearch */
@@ -16,6 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 CrudAsset::register($this);
 
 ?>
+<?php Pjax::begin(['id' => 'pjax-container', 'enablePushState' => false]); ?>
 <div class="panel panel-inverse technic-index">
 <div class="panel-heading">
     <h4 class="panel-title">Техника</h4>
@@ -36,6 +38,11 @@ CrudAsset::register($this);
                         'role' => 'modal-remote',
                         'title' => 'Добавить компанию',
                         'class' => 'btn btn-success'
+                    ]) . '&nbsp;' . Html::a('Сбросить все <i class="fa fa-repeat"></i>', ['clear','containerPjaxReload'=>'#pjax-container'],
+                    [
+                        'role' => 'modal-remote',
+                        'title' => 'Сбросить резерв',
+                        'class' => 'btn btn-warning'
                     ]) . '&nbsp;' .
                 Html::a('<i class="fa fa-repeat"></i>', [''],
                     ['data-pjax' => 1, 'class' => 'btn btn-white', 'title' => 'Обновить']),
@@ -64,6 +71,7 @@ CrudAsset::register($this);
     </div>
 </div>
 </div>
+<?php Pjax::end() ?>
 <?php Modal::begin([
     "id"=>"ajaxCrudModal",
     "footer"=>"",// always need it for jquery plugin

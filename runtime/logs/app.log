@@ -6708,3 +6708,2221 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2022-03-30 15:30:37 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Html' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:69
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(61): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-30 15:30:37 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65144'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643437.832
+    'REQUEST_TIME' => 1648643437
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:35:05 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Pjax' not found in D:\OpenServer\domains\specavtomig\views\technic\index.php:19
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-30 15:35:05 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65503'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643705.144
+    'REQUEST_TIME' => 1648643705
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:35:51 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Html' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:69
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-30 15:35:51 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65504'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643751.472
+    'REQUEST_TIME' => 1648643751
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:36:54 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Html' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:69
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-30 15:36:54 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65512'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643814.512
+    'REQUEST_TIME' => 1648643814
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:36:55 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Html' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:69
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-30 15:36:55 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65523'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643815.216
+    'REQUEST_TIME' => 1648643815
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:36:55 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Html' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:69
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-30 15:36:55 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65526'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643815.816
+    'REQUEST_TIME' => 1648643815
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:37:06 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'Html' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:72
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-30 15:37:06 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65529'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643826.28
+    'REQUEST_TIME' => 1648643826
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 15:37:40 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Technic::status in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('status')
+#1 D:\OpenServer\domains\specavtomig\views\technic\_columns.php(85): yii\db\BaseActiveRecord->__get('status')
+#2 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#8 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#11 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#16 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#18 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#21 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#22 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#23 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#24 [internal function]: app\controllers\TechnicController->actionIndex()
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#28 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#29 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#31 {main}
+2022-03-30 15:37:40 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65533'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648643860.656
+    'REQUEST_TIME' => 1648643860
+    'argv' => []
+    'argc' => 0
+]
+2022-03-30 16:01:50 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: toPay in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:107
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\views\technic\_columns.php(107): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\OpenServer\\d...', 107, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#7 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#14 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#17 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#22 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#23 [internal function]: app\controllers\TechnicController->actionIndex()
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#28 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#30 {main}
+2022-03-30 16:01:49 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = [
+    '_pjax' => '#pjax-container'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'Ln4FBl5PgzPNnT0aFc29ZQNjMMpX_hLhGTfm_jcCJnAWH09fOjflX6rKaVhvmIxSaFFBkBWscJteedOHAWtcGQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#pjax-container'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://spmig/technic/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '55482'
+    'REDIRECT_URL' => '/technic/index'
+    'REDIRECT_QUERY_STRING' => '_pjax=%23pjax-container'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_pjax=%23pjax-container'
+    'REQUEST_URI' => '/technic/index?_pjax=%23pjax-container'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648645309.929
+    'REQUEST_TIME' => 1648645309
+    'argv' => [
+        0 => '_pjax=%23pjax-container'
+    ]
+    'argc' => 1
+]
+2022-03-30 16:01:50 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: toPay in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:107
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\views\technic\_columns.php(107): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\OpenServer\\d...', 107, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\Column.php(165): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(265): yii\grid\Column->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#7 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#14 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#17 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#22 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#23 [internal function]: app\controllers\TechnicController->actionIndex()
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#28 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#30 {main}
+2022-03-30 16:01:50 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '55483'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648645310.079
+    'REQUEST_TIME' => 1648645310
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:12:39 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '$model' (T_VARIABLE) in D:\OpenServer\domains\specavtomig\controllers\TechnicController.php:303
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(643): class_exists('app\\controllers...')
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('technic')
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('take')
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/take', Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#8 {main}
+2022-03-31 16:12:39 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = [
+    'id' => '1'
+    'containerPjaxReload' => '#pjax-container'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '_FV7X9Pc_NHczuF79cVwA-rzm6KzD0S3yKpPHw6P7T3ENDEGt6SavbuZtTmPkEE0gcHq-PFdJs2P5HpmOOaXVA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarye2c6Esa6d1f0L2jx'
+    'HTTP_ORIGIN' => 'http://spmig'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61000'
+    'REDIRECT_URL' => '/technic/take'
+    'REDIRECT_QUERY_STRING' => 'id=1&containerPjaxReload=%23pjax-container'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1&containerPjaxReload=%23pjax-container'
+    'REQUEST_URI' => '/technic/take?id=1&containerPjaxReload=%23pjax-container'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732359.666
+    'REQUEST_TIME' => 1648732359
+    'argv' => [
+        0 => 'id=1&containerPjaxReload=%23pjax-container'
+    ]
+    'argc' => 1
+]
+2022-03-31 16:13:37 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '$model' (T_VARIABLE) in D:\OpenServer\domains\specavtomig\controllers\TechnicController.php:303
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(643): class_exists('app\\controllers...')
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('technic')
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('')
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#8 {main}
+2022-03-31 16:13:37 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61017'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732417.452
+    'REQUEST_TIME' => 1648732417
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:13:51 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '$model' (T_VARIABLE) in D:\OpenServer\domains\specavtomig\controllers\TechnicController.php:303
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(643): class_exists('app\\controllers...')
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('technic')
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('')
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#8 {main}
+2022-03-31 16:13:51 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61018'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732431.506
+    'REQUEST_TIME' => 1648732431
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:13:52 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '$model' (T_VARIABLE) in D:\OpenServer\domains\specavtomig\controllers\TechnicController.php:303
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(643): class_exists('app\\controllers...')
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('technic')
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('')
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#8 {main}
+2022-03-31 16:13:52 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61023'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732432.179
+    'REQUEST_TIME' => 1648732432
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:16:48 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: adta in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:66
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\views\technic\_columns.php(66): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\OpenServer\\d...', 66, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(248): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(262): yii\grid\DataColumn->getDataCellValue(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#7 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#14 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#17 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#22 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#23 [internal function]: app\controllers\TechnicController->actionIndex()
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#28 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#30 {main}
+2022-03-31 16:16:48 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '54925'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732608.189
+    'REQUEST_TIME' => 1648732608
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:17:07 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'User' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(248): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(262): yii\grid\DataColumn->getDataCellValue(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-31 16:17:07 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = [
+    '_pjax' => '#pjax-container'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => '-TpijjXOe4tyvpE4Pz5irqSGlVPI_5Z3es_xEpVhlUvBWyjXUbYd5xXpxXpFa1OZz7TkCYqt9A09gcRrowjvIg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#pjax-container'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '54926'
+    'REDIRECT_URL' => '/technic'
+    'REDIRECT_QUERY_STRING' => '_pjax=%23pjax-container'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_pjax=%23pjax-container'
+    'REQUEST_URI' => '/technic?_pjax=%23pjax-container'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732627.445
+    'REQUEST_TIME' => 1648732627
+    'argv' => [
+        0 => '_pjax=%23pjax-container'
+    ]
+    'argc' => 1
+]
+2022-03-31 16:17:07 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][Error] Error: Class 'User' not found in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(248): call_user_func(Object(Closure), Object(app\models\Technic), 1, 0, Object(kartik\grid\DataColumn))
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\DataColumn.php(262): yii\grid\DataColumn->getDataCellValue(Object(app\models\Technic), 1, 0)
+#3 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\DataColumn.php(245): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Technic), 1, 0)
+#4 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1323): kartik\grid\DataColumn->renderDataCell(Object(app\models\Technic), 1, 0)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(494): kartik\grid\GridView->renderTableRow(Object(app\models\Technic), 1, 0)
+#6 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1303): yii\grid\GridView->renderTableBody()
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(358): kartik\grid\GridView->renderTableBody()
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#13 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#14 D:\OpenServer\domains\specavtomig\vendor\kartik-v\yii2-grid\src\GridView.php(1221): yii\grid\GridView->run()
+#15 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Widget.php(141): kartik\grid\GridView->run()
+#16 D:\OpenServer\domains\specavtomig\views\technic\index.php(63): yii\base\Widget::widget(Array)
+#17 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#18 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#19 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#20 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#21 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\TechnicController->actionIndex()
+#23 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#26 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#27 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#29 {main}
+2022-03-31 16:17:07 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '54929'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732627.555
+    'REQUEST_TIME' => 1648732627
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:17:42 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:12
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:17:42 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '54935'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648732662.283
+    'REQUEST_TIME' => 1648732662
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:31:25 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '}', expecting ';' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:65
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:31:25 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59043'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733485.667
+    'REQUEST_TIME' => 1648733485
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:31:55 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:31:55 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59044'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733515.89
+    'REQUEST_TIME' => 1648733515
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:32:01 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:32:01 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59048'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733521.859
+    'REQUEST_TIME' => 1648733521
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:32:07 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:32:07 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59055'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733527.219
+    'REQUEST_TIME' => 1648733527
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:32:08 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:32:08 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59059'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733528.907
+    'REQUEST_TIME' => 1648733528
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:32:09 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:32:09 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59062'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733529.468
+    'REQUEST_TIME' => 1648733529
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:32:26 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:32:26 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59065'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733546.546
+    'REQUEST_TIME' => 1648733546
+    'argv' => []
+    'argc' => 0
+]
+2022-03-31 16:32:31 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in D:\OpenServer\domains\specavtomig\views\technic\_columns.php:67
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\TechnicController))
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render('index', Array, Object(app\controllers\TechnicController))
+#4 D:\OpenServer\domains\specavtomig\controllers\TechnicController.php(66): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TechnicController->actionIndex()
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic/index', Array)
+#10 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2022-03-31 16:32:31 [127.0.0.1][1][cpog7tnl6u59dmmc6k3hm4n069v48v5j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cpog7tnl6u59dmmc6k3hm4n069v48v5j'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8aJYdxflgWTBzU17k2qZBRbzGN5y6izi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36 OPR/84.0.4316.42'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/technic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=cpog7tnl6u59dmmc6k3hm4n069v48v5j; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=727eb6ef4d95fd15ed4ebc538b52a0d378903a765c168b44fd75975e8b91e233a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228aJYdxflgWTBzU17k2qZBRbzGN5y6izi%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '59071'
+    'REDIRECT_URL' => '/technic/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648733551.699
+    'REQUEST_TIME' => 1648733551
+    'argv' => []
+    'argc' => 0
+]
