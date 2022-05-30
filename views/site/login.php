@@ -22,7 +22,7 @@ $fieldOptions2 = [
     <!-- begin brand -->
     <div class="login-header">
         <div class="brand">
-            <p style="margin-left: 60px">СПЕЦАВТОМИГ</p>
+            <p style="margin-left: 60px">TTEL</p>
             <small style="margin-left: 55px">Введите данные для авторизации</small>
         </div>
     </div>

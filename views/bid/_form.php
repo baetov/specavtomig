@@ -87,6 +87,80 @@ $nds = <<<JS
             document.getElementById("bid-total").value = total;
         }
 JS;
+
+$k_priceSum = <<<JS
+            let hours = document.getElementById("bid-k_hours").value;
+            let hoursPrice = $(this).val();
+            let mkadMileage = document.getElementById("bid-k_mkad").value;
+            let mkadPrice = document.getElementById("bid-k_mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+            
+            if (document.getElementById("k_nds").value == "+ НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-k_total").value = total;
+JS;
+$k_mkadSum = <<<JS
+            let hours = document.getElementById("bid-k_hours").value;
+            let hoursPrice = document.getElementById("bid-k_price").value;
+            let mkadMileage = document.getElementById("bid-k_mkad").value;
+            let mkadPrice = $(this).val();
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("k_nds").value == "+ НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-k_total").value = total;
+JS;
+$k_mkad = <<<JS
+            let hours = document.getElementById("bid-k_hours").value;
+            let hoursPrice = document.getElementById("bid-k_price").value;
+            let mkadMileage = $(this).val();
+            let mkadPrice = document.getElementById("bid-k_mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("k_nds").value == "+ НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-k_total").value = total;   
+JS;
+$k_hours = <<<JS
+            let hours = $(this).val();
+            let hoursPrice = document.getElementById("bid-k_price").value;
+            let mkadMileage = document.getElementById("bid-k_mkad").value;
+            let mkadPrice = document.getElementById("bid-k_mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("k_nds").value == "+ НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-k_total").value = total;
+JS;
+$k_hours = <<<JS
+            let hours = $(this).val();
+            let hoursPrice = document.getElementById("bid-k_price").value;
+            let mkadMileage = document.getElementById("bid-k_mkad").value;
+            let mkadPrice = document.getElementById("bid-k_mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+             if (document.getElementById("k_nds").value == "+ НДС"){
+                total = total*1.2;
+            }
+            document.getElementById("bid-k_total").value = total;
+JS;
+$k_nds = <<<JS
+        let ndsVal = $(this).val();
+        if (ndsVal == "+ НДС"){
+            let totalVal = document.getElementById("bid-k_total").value;
+            let total = +totalVal*1.2 ;
+            document.getElementById("bid-k_total").value = total;
+        }
+        if (ndsVal == "в.ч. НДС"){
+            let hours = document.getElementById("bid-k_hours").value;
+            let hoursPrice = document.getElementById("bid-k_price").value;
+            let mkadMileage = document.getElementById("bid-k_mkad").value;
+            let mkadPrice = document.getElementById("bid-k_mkad_price").value;
+            let total = (+hours*+hoursPrice) + (+mkadPrice*+mkadMileage);
+            document.getElementById("bid-k_total").value = total;
+        }
+JS;
+?>
 ?>
 
 <div class="bid-form">
@@ -317,22 +391,75 @@ JS;
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <p style="color:orange;margin-bottom:5px;">Заполнять только в случае если техника контрагента</p>
+    </div>
+    <div class="row"style="border: 1px solid orange;padding-top:10px;margin-bottom:10px;">
+        <div class="col-md-2">
+            <?= $form->field($model, 'k_hours')->textInput(['onchange' => $k_hours]) ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'k_price')->textInput(['onchange' => $k_priceSum]) ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'k_mkad')->textInput(['onchange' => $k_mkad]) ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'k_mkad_price')->textInput(['onchange' => $k_mkadSum]) ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'k_pay_form')->dropDownList([
+                'в.ч. НДС' => 'в.ч. НДС',
+                '+ НДС' => '+ НДС',
+            ],['id' => 'k_nds','onchange' => $k_nds]) ?>
+        </div>
+        <div class="col-md-2">
+            <?= $form->field($model, 'k_total')->textInput() ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
         <?= $form->field($model, 'route')->textarea(['rows' => 4]) ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($model, 'details')->textarea(['rows' => 4]) ?>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <?= $form->field($model, 'work_kind_id')->widget(Select2::classname(), [
-                'data' =>  ArrayHelper::map(WorkKind::find()->all(), 'id', 'name'),
-                'language' => 'ru',
-                'options' => ['placeholder' => 'выберите  вид работ ...'],
-                'pluginOptions' => [
-                    'allowClear' => true
-                ],
-            ]);
-            ?>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10">
+                    <?= $form->field($model, 'work_kind_id')->widget(Select2::classname(), [
+                        'data' =>  ArrayHelper::map(WorkKind::find()->all(), 'id', 'name'),
+                        'language' => 'ru',
+                        'options' => ['placeholder' => 'выберите  вид работ ...'],
+                        'pluginOptions' => [
+                            'allowClear' => true
+                        ],
+                    ]);
+                    ?>
+                </div>
+                <div class="col-md-1">
+                    <?= Html::a("<i class='fa fa-plus'></i>", ['bid/create-workkind'], [
+                        'class' => 'btn btn-default btn-block',
+                        'style' => 'margin-top: 22px;',
+                        'role' => 'modal-remote',
+                        'onclick' => '
+                        
+                                    var $form = $("#frm");
+                                    $.ajax({
+                                      type: "POST",
+                                      url: "bid/session-form",
+                                      data: $form.serialize(),
+                                    }).done(function() {
+                                      console.log(\'success\');
+                                    }).fail(function() {
+                                      console.log(\'fail\');
+                                    });
+                        ',
+                    ]) ?>
+                </div>
+            </div>
         </div>
     </div>
 

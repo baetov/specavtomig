@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\behaviors\RoleBehavior;
 use app\models\MultiTechSubgroup;
 use app\models\Technic;
+use app\models\WorkKind;
 use app\models\TechnicType;
 use app\models\TechnicTypeSubgroup;
 use app\models\WorkType;
@@ -337,7 +338,78 @@ class BidController extends Controller
         $techList = ArrayHelper::map(Technic::find()->where(['id' => $list])->all(), 'id', 'name');
         return $techList;
     }
+    /**
+     * Creates a new WorkKind model.
+     * For ajax request will return json object
+     * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
+     * @return mixed
+     */
+    public function actionCreateWorkkind()
+    {
+        $request = Yii::$app->request;
+        $model = new WorkKind();
 
+        if($request->isAjax){
+            /*
+            *   Process for ajax request
+            */
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            if($request->isGet){
+                return [
+                    'title'=> "Добавить объект",
+                    'content'=>$this->renderAjax('@app/views/work-kind/create', [
+                        'model' => $model,
+                    ]),
+                    'footer'=> Html::button('Закрыть',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button('Добавить',['class'=>'btn btn-primary','type'=>"submit"])
+
+                ];
+            }else if($model->load($request->post()) && $model->save()){
+
+                $bid = (new Bid());
+
+                if(Yii::$app->session->has('bid-form-session')){
+                    \Yii::warning(Yii::$app->session->get('bid-form-session'));
+                    $bid->attributes = Yii::$app->session->get('bid-form-session');
+                    Yii::$app->session->set('bid-form-session', null);
+                }
+
+                return [
+                    'title'=> "Добавить заявку",
+                    'content'=>$this->renderAjax('create', [
+                        'model' => $bid,
+                        'action' => 'create',
+                    ]),
+                    'footer'=> Html::button('Закрыть',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button('Добавить',['class'=>'btn btn-primary','type'=>"submit"])
+
+                ];
+            }else{
+
+                return [
+                    'title'=> "Добавить объект",
+                    'content'=>$this->renderAjax('@app/views/work-kind/create', [
+                        'model' => $model,
+                    ]),
+                    'footer'=> Html::button('Закрыть',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button('Добавить',['class'=>'btn btn-primary','type'=>"submit"])
+
+                ];
+            }
+        }else{
+            /*
+            *   Process for non-ajax request
+            */
+            if ($model->load($request->post()) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                return $this->render('@app/views/work-kind/create', [
+                    'model' => $model,
+                ]);
+            }
+        }
+
+    }
     /**
      * Finds the Bid model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.

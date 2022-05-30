@@ -26,6 +26,12 @@ use yii\behaviors\TimestampBehavior;
  * @property int $mkad км за МКАД
  * @property int $mkad_price Цена за км
  * @property int $total Итого
+ * @property string $k_pay_form Форма оплаты
+ * @property int $k_price Цена
+ * @property int $k_hours кол-во часов работы
+ * @property int $k_mkad км за МКАД
+ * @property int $k_mkad_price Цена за км
+ * @property int $k_total Итого
  * @property int $fuel Топливо выдано
  * @property int $mileage Общий пробег
  * @property int $author_id автор
@@ -37,6 +43,7 @@ use yii\behaviors\TimestampBehavior;
  * @property integer $driver_id водитель
  * @property  updated_by изменил
  * @property updated_at
+ * @property string details
  *
  * @property Client $client
  * @property Technic $technic
@@ -63,7 +70,7 @@ class Bid extends \yii\db\ActiveRecord
     {
         return [
             [['client_id', 'technic_type_id','author_id', 'technic_type_subgroup_id', 'technic_id', 'work_kind_id', 'work_type_id', 'driver_id', 'status', 'pay_status', 'mileage','updated_by'], 'integer'],
-            [['date', 'garage_out', 'garage_in', 'customer_in', 'customer_out','comment','updated_at'], 'safe'],
+            [['date', 'garage_out', 'garage_in', 'customer_in', 'customer_out','comment','updated_at','details'], 'safe'],
             [['route', 'price', 'hours', 'mkad', 'mkad_price', 'total', 'fuel'], 'string'],
             [['pay_form'], 'string', 'max' => 255],
             [['client_id'], 'exist', 'skipOnError' => true, 'targetClass' => Client::className(), 'targetAttribute' => ['client_id' => 'id']],
@@ -119,6 +126,12 @@ class Bid extends \yii\db\ActiveRecord
             'mkad' => 'КМ за МКАД',
             'mkad_price' => 'Цена за КМ',
             'total' => 'Итого',
+            'k_pay_form' => 'Форма оплаты',
+            'k_price' => 'Цена за час',
+            'k_hours' => 'Кол-во часов работы',
+            'k_mkad' => 'КМ за МКАД',
+            'k_mkad_price' => 'Цена за КМ',
+            'k_total' => 'Итого',
             'fuel' => 'Топливо выдано',
             'mileage' => 'Общий пробег',
             'garage_out' => 'Выезд из гаража',
@@ -128,7 +141,8 @@ class Bid extends \yii\db\ActiveRecord
             'comment' => 'Комментарии',
             'author_id' => 'Автор',
             'updated_by' => 'Изменил',
-            'updated_at' => 'Дата и время изменения'
+            'updated_at' => 'Дата и время изменения',
+            'details' => 'Подробная информация'
         ];
     }
     public function beforeSave($insert)

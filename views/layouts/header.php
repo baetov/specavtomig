@@ -16,7 +16,7 @@ CrudAsset::register($this);
                 <!-- begin mobile sidebar expand / collapse button -->
                 <div class="navbar-header">
                     <a href="<?=Yii::$app->homeUrl?>" class="navbar-brand">
-                        <p>СПЕЦАВТОМИГ</p>
+                        <p>TTEL</p>
                     </a>
                     <button type="button" class="navbar-toggle" data-click="top-menu-toggled">
                         <span class="icon-bar"></span>

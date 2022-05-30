@@ -71,6 +71,8 @@ use yii\widgets\DetailView;
                     'mkad_price',
                     'total',
                     'fuel',
+                    'details',
+                    'comment'
                 ],
             ]) ?>
         </div>
