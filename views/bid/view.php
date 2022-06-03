@@ -55,7 +55,7 @@ use yii\widgets\DetailView;
                     'garage_out',
                     'customer_in',
                     'customer_out',
-                    'garage_in'
+                    'garage_in',
                     'details',
                     'comment'
                 ],
