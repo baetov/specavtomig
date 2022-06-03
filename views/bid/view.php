@@ -71,6 +71,30 @@ use yii\widgets\DetailView;
                     'mkad_price',
                     'total',
                     'fuel',
+                    [
+                        'attribute' => 'k_pay_form',
+                        'label' => 'Форма оплаты (КОНТРАГЕНТ)'
+                    ],
+                    [
+                        'attribute' => 'k_price',
+                        'label' => 'Цена за час (КОНТРАГЕНТ)'
+                    ],
+                    [
+                        'attribute' => 'k_hours',
+                        'label' => 'Количество часов работы (КОНТРАГЕНТ)'
+                    ],
+                    [
+                        'attribute' => 'k_mkad',
+                        'label' => 'КМ за МКАД (КОНТРАГЕНТ)'
+                    ],
+                    [
+                        'attribute' => 'k_mkad_price',
+                        'label' => 'Цена за КМ (КОНТРАГЕНТ)'
+                    ],
+                    [
+                        'attribute' => 'k_total',
+                        'label' => 'Итого(КОНТРАГЕНТ)'
+                    ],
                     'details',
                     'comment'
                 ],
