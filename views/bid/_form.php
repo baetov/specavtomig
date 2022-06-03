@@ -161,7 +161,6 @@ $k_nds = <<<JS
         }
 JS;
 ?>
-?>
 
 <div class="bid-form">
 
@@ -390,30 +389,37 @@ JS;
             <?= $form->field($model, 'total')->textInput() ?>
         </div>
     </div>
-    <div class="row">
-        <p style="color:orange;margin-bottom:5px;">Заполнять только в случае если техника контрагента</p>
-    </div>
-    <div class="row"style="border: 1px solid orange;padding-top:10px;margin-bottom:10px;">
-        <div class="col-md-2">
-            <?= $form->field($model, 'k_hours')->textInput(['onchange' => $k_hours]) ?>
+    <div class="panel"style="background-color:#f3f8db;color:black;">
+        <div class="panel-heading">
+            <h4 class="panel-title">Заполнять только в случае если техника контрагента</h4>
+            <div class="panel-heading-btn" style="margin-top:-20px;overflow-y: auto;">
+                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-primary"  data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+            </div>
         </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'k_price')->textInput(['onchange' => $k_priceSum]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'k_mkad')->textInput(['onchange' => $k_mkad]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'k_mkad_price')->textInput(['onchange' => $k_mkadSum]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'k_pay_form')->dropDownList([
-                'в.ч. НДС' => 'в.ч. НДС',
-                '+ НДС' => '+ НДС',
-            ],['id' => 'k_nds','onchange' => $k_nds]) ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'k_total')->textInput() ?>
+        <div class="panel-body" style="display: none;">
+            <div class="row"style="border: 1px solid orange;padding-top:10px;margin-bottom:10px;">
+                <div class="col-md-2">
+                    <?= $form->field($model, 'k_hours')->textInput(['onchange' => $k_hours]) ?>
+                </div>
+                <div class="col-md-2">
+                    <?= $form->field($model, 'k_price')->textInput(['onchange' => $k_priceSum]) ?>
+                </div>
+                <div class="col-md-2">
+                    <?= $form->field($model, 'k_mkad')->textInput(['onchange' => $k_mkad]) ?>
+                </div>
+                <div class="col-md-2">
+                    <?= $form->field($model, 'k_mkad_price')->textInput(['onchange' => $k_mkadSum]) ?>
+                </div>
+                <div class="col-md-2">
+                    <?= $form->field($model, 'k_pay_form')->dropDownList([
+                        'в.ч. НДС' => 'в.ч. НДС',
+                        '+ НДС' => '+ НДС',
+                    ],['id' => 'k_nds','onchange' => $k_nds]) ?>
+                </div>
+                <div class="col-md-2">
+                    <?= $form->field($model, 'k_total')->textInput() ?>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
