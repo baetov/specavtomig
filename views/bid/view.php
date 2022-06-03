@@ -56,7 +56,8 @@ use yii\widgets\DetailView;
                     'customer_in',
                     'customer_out',
                     'garage_in'
-
+                    'details',
+                    'comment'
                 ],
             ]) ?>
         </div>
@@ -95,8 +96,7 @@ use yii\widgets\DetailView;
                         'attribute' => 'k_total',
                         'label' => 'Итого(КОНТРАГЕНТ)'
                     ],
-                    'details',
-                    'comment'
+
                 ],
             ]) ?>
         </div>
