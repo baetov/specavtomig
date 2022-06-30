@@ -60,6 +60,8 @@ class TechnicController extends Controller
     {    
         $searchModel = new TechnicSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider->query->where(['NOT',['id'=>[24,31,27,29]]])->all();
+        $dataProvider->pagination->pageSize=29;
 
         return $this->render('index', [
             'searchModel' => $searchModel,

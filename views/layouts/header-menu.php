@@ -23,7 +23,7 @@ use yii\helpers\Url;
                             ['label' => 'Водтели', 'icon' => 'fa fa-users', 'url' => ['/driver'],],
 //                            ['label' => 'Виды техники', 'icon' => 'fa fa-flag', 'url' => ['/technic-type'],],
                             ['label' => 'Виды работ','icon' => 'fa fa-cogs','url' => ['/work-kind'],],
-                            ['label' => 'Виды техники', 'icon' => 'fa fa-car', 'url' => ['/technic-type'],],
+//                            ['label' => 'Виды техники', 'icon' => 'fa fa-car', 'url' => ['/technic-type'],],
                     ]],
                     ['label' => 'Только для администратора', 'icon' => 'fa fa-list-ul', 'url' => '/user', 'options' => ['class' => 'has-sub'],'visible' =>Yii::$app->user->identity->can('directory_access'),
                         'items' => [

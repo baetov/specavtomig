@@ -335,7 +335,7 @@ class BidController extends Controller
     public function actionSearchTech($q){
         Yii::$app->response->format = Response::FORMAT_JSON;
         $list =  ArrayHelper::map(MultiTechSubgroup::find()->where(['subgroup_id' => $q])->all(), 'id', 'technic_id');
-        $techList = ArrayHelper::map(Technic::find()->where(['id' => $list])->all(), 'id', 'name');
+        $techList = ArrayHelper::map(Technic::find()->where(['id' => $list])->andWhere(['NOT',['id'=>[24,31,27,29]]])->all(), 'id', 'name');
         return $techList;
     }
     /**

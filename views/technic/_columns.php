@@ -91,18 +91,18 @@ return [
             $view = Html::a('<i class="fa fa-eye" style="font-size: 16px;"></i>', ['technic/view', 'id' => $model->id],
                 ['role'=>'modal-remote','title'=>'Просмотр', 'data-toggle'=>'tooltip']
             );
-            $update = Html::a('<i class="fa fa-pencil" style="font-size: 16px;"></i>', ['technic/update', 'id' => $model->id],
-                ['role'=>'modal-remote','title'=>'Изменить', 'data-toggle'=>'tooltip','style' => 'margin-left: 10px;',]
-            );
-            $delete = Html::a('<i class="fa fa-trash text-danger" style="font-size: 16px;"></i>', ['technic/delete', 'id' => $model->id, 'containerPjaxReload'=>'#pjax-container'],[
-                'role'=>'modal-remote','title'=>'Удалить',
-                'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
-                'data-request-method'=>'post',
-                'data-toggle'=>'tooltip',
-                'data-confirm-title'=>'Вы уверены?',
-                'data-confirm-message'=>'Вы действительно хотите удалить файл',
-                'style' => 'margin-left: 10px;',
-            ]);
+//            $update = Html::a('<i class="fa fa-pencil" style="font-size: 16px;"></i>', ['technic/update', 'id' => $model->id],
+//                ['role'=>'modal-remote','title'=>'Изменить', 'data-toggle'=>'tooltip','style' => 'margin-left: 10px;',]
+//            );
+//            $delete = Html::a('<i class="fa fa-trash text-danger" style="font-size: 16px;"></i>', ['technic/delete', 'id' => $model->id, 'containerPjaxReload'=>'#pjax-container'],[
+//                'role'=>'modal-remote','title'=>'Удалить',
+//                'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
+//                'data-request-method'=>'post',
+//                'data-toggle'=>'tooltip',
+//                'data-confirm-title'=>'Вы уверены?',
+//                'data-confirm-message'=>'Вы действительно хотите удалить файл',
+//                'style' => 'margin-left: 10px;',
+//            ]);
             if ($model->reserve == false){
                 $take =  Html::a('<i class="fa fa-check text-success" style="font-size: 16px;"></i>', ['technic/take', 'id' => $model->id, 'containerPjaxReload'=>'#pjax-container'],[
                     'role'=>'modal-remote','title'=>'Забронировать',
@@ -113,7 +113,7 @@ return [
                     'data-confirm-message'=>'Вы действительно хотите Забронировать',
                     'style' => 'margin-left: 10px;',
                 ]);
-                return $view . $update . $take . $delete;
+                return $view .  $take ;
 
             }elseif ($model->reserve == true){
                 $free =  Html::a('<i class="fa fa-times text-danger" style="font-size: 16px;"></i>', ['technic/free', 'id' => $model->id, 'containerPjaxReload'=>'#pjax-container'],[
@@ -125,10 +125,10 @@ return [
                     'data-confirm-message'=>'Вы действительно хотите освободить от брони?',
                     'style' => 'margin-left: 10px;',
                 ]);
-                return $view . $update . $free . $delete  ;
+                return $view  . $free ;
 
             }else{
-                return $view . $update . $delete;
+                return $view  ;
             }
         }
     ],

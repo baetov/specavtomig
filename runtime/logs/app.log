@@ -10812,3 +10812,1465 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2022-06-29 16:05:22 [127.0.0.1][-][p5frff3setk2o04fab3ealnvhj4f4k11][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/font-awesome/css/font-awesome.min.css". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/fo...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:05:22 [127.0.0.1][-][p5frff3setk2o04fab3ealnvhj4f4k11][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p5frff3setk2o04fab3ealnvhj4f4k11'
+    '_csrf' => 'f3bdd63119f801eb7a51f2c7109bee9d88184baa7954e6d81d73779aca4e42cda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PC6fDHjHk523Qp6KWFlzBYmlMlE5ZAPQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=p5frff3setk2o04fab3ealnvhj4f4k11; _csrf=f3bdd63119f801eb7a51f2c7109bee9d88184baa7954e6d81d73779aca4e42cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PC6fDHjHk523Qp6KWFlzBYmlMlE5ZAPQ%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '57406'
+    'REDIRECT_URL' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656507922.587
+    'REQUEST_TIME' => 1656507922
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:05:22 [127.0.0.1][-][p5frff3setk2o04fab3ealnvhj4f4k11][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/pace/pace.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:05:22 [127.0.0.1][-][p5frff3setk2o04fab3ealnvhj4f4k11][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p5frff3setk2o04fab3ealnvhj4f4k11'
+    '_csrf' => 'f3bdd63119f801eb7a51f2c7109bee9d88184baa7954e6d81d73779aca4e42cda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PC6fDHjHk523Qp6KWFlzBYmlMlE5ZAPQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=p5frff3setk2o04fab3ealnvhj4f4k11; _csrf=f3bdd63119f801eb7a51f2c7109bee9d88184baa7954e6d81d73779aca4e42cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PC6fDHjHk523Qp6KWFlzBYmlMlE5ZAPQ%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '57404'
+    'REDIRECT_URL' => '/theme/assets/plugins/pace/pace.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/pace/pace.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656507922.595
+    'REQUEST_TIME' => 1656507922
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:05:22 [127.0.0.1][-][p5frff3setk2o04fab3ealnvhj4f4k11][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/slimscroll/jquery.slimscroll.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:05:22 [127.0.0.1][-][p5frff3setk2o04fab3ealnvhj4f4k11][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p5frff3setk2o04fab3ealnvhj4f4k11'
+    '_csrf' => 'f3bdd63119f801eb7a51f2c7109bee9d88184baa7954e6d81d73779aca4e42cda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PC6fDHjHk523Qp6KWFlzBYmlMlE5ZAPQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=p5frff3setk2o04fab3ealnvhj4f4k11; _csrf=f3bdd63119f801eb7a51f2c7109bee9d88184baa7954e6d81d73779aca4e42cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PC6fDHjHk523Qp6KWFlzBYmlMlE5ZAPQ%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '57409'
+    'REDIRECT_URL' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656507922.645
+    'REQUEST_TIME' => 1656507922
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:05:36 [127.0.0.1][1][9ph57ep0scn7290nc42ct6vlq8g6gjqd][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\BidSearch::k_pay_form in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('k_pay_form')
+#1 D:\OpenServer\domains\specavtomig\models\BidSearch.php(73): yii\db\BaseActiveRecord->__get('k_pay_form')
+#2 D:\OpenServer\domains\specavtomig\controllers\BidController.php(71): app\models\BidSearch->search(Array)
+#3 [internal function]: app\controllers\BidController->actionIndex()
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('', Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2022-06-29 16:05:35 [127.0.0.1][1][9ph57ep0scn7290nc42ct6vlq8g6gjqd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ph57ep0scn7290nc42ct6vlq8g6gjqd'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => 'c3548f3a67070bf4eb0b84668b38a620f74c5849677da8f2d931d4b44dec701fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9cVaN5UV59Lj6h3dZ2tModCh1QcX9OG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=9ph57ep0scn7290nc42ct6vlq8g6gjqd; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=c3548f3a67070bf4eb0b84668b38a620f74c5849677da8f2d931d4b44dec701fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9cVaN5UV59Lj6h3dZ2tModCh1QcX9OG%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '57409'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656507935.896
+    'REQUEST_TIME' => 1656507935
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:05:43 [127.0.0.1][1][9ph57ep0scn7290nc42ct6vlq8g6gjqd][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\BidSearch::k_pay_form in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('k_pay_form')
+#1 D:\OpenServer\domains\specavtomig\models\BidSearch.php(73): yii\db\BaseActiveRecord->__get('k_pay_form')
+#2 D:\OpenServer\domains\specavtomig\controllers\BidController.php(71): app\models\BidSearch->search(Array)
+#3 [internal function]: app\controllers\BidController->actionIndex()
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#7 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('bid', Array)
+#8 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2022-06-29 16:05:43 [127.0.0.1][1][9ph57ep0scn7290nc42ct6vlq8g6gjqd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ph57ep0scn7290nc42ct6vlq8g6gjqd'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => 'c3548f3a67070bf4eb0b84668b38a620f74c5849677da8f2d931d4b44dec701fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9cVaN5UV59Lj6h3dZ2tModCh1QcX9OG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=9ph57ep0scn7290nc42ct6vlq8g6gjqd; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=c3548f3a67070bf4eb0b84668b38a620f74c5849677da8f2d931d4b44dec701fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9cVaN5UV59Lj6h3dZ2tModCh1QcX9OG%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '57407'
+    'REDIRECT_URL' => '/bid'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bid'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656507943.307
+    'REQUEST_TIME' => 1656507943
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:43 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/pace/pace.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:43 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63823'
+    'REDIRECT_URL' => '/theme/assets/plugins/pace/pace.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/pace/pace.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510283.152
+    'REQUEST_TIME' => 1656510283
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:43 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/font-awesome/css/font-awesome.min.css". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/fo...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:43 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63826'
+    'REDIRECT_URL' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510283.15
+    'REQUEST_TIME' => 1656510283
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:43 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/slimscroll/jquery.slimscroll.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:43 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63824'
+    'REDIRECT_URL' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510283.167
+    'REQUEST_TIME' => 1656510283
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:49 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/font-awesome/css/font-awesome.min.css". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/fo...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:49 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63824'
+    'REDIRECT_URL' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510289.613
+    'REQUEST_TIME' => 1656510289
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:49 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/pace/pace.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:49 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63827'
+    'REDIRECT_URL' => '/theme/assets/plugins/pace/pace.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/pace/pace.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510289.614
+    'REQUEST_TIME' => 1656510289
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:49 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/slimscroll/jquery.slimscroll.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:49 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63828'
+    'REDIRECT_URL' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510289.614
+    'REQUEST_TIME' => 1656510289
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:55 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/font-awesome/css/font-awesome.min.css". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/fo...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:55 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63829'
+    'REDIRECT_URL' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510295.504
+    'REQUEST_TIME' => 1656510295
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:55 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/slimscroll/jquery.slimscroll.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:55 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63835'
+    'REDIRECT_URL' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510295.504
+    'REQUEST_TIME' => 1656510295
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:44:55 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/pace/pace.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:44:55 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '63833'
+    'REDIRECT_URL' => '/theme/assets/plugins/pace/pace.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/pace/pace.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510295.504
+    'REQUEST_TIME' => 1656510295
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:45:04 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/font-awesome/css/font-awesome.min.css". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/fo...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:45:04 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61420'
+    'REDIRECT_URL' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510304.183
+    'REQUEST_TIME' => 1656510304
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:45:04 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/slimscroll/jquery.slimscroll.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:45:04 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61423'
+    'REDIRECT_URL' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510304.183
+    'REQUEST_TIME' => 1656510304
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:45:04 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/pace/pace.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:45:04 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61421'
+    'REDIRECT_URL' => '/theme/assets/plugins/pace/pace.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/pace/pace.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510304.183
+    'REQUEST_TIME' => 1656510304
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:45:16 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/font-awesome/css/font-awesome.min.css". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/fo...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:45:16 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61425'
+    'REDIRECT_URL' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/font-awesome/css/font-awesome.min.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510316.49
+    'REQUEST_TIME' => 1656510316
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:45:16 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/pace/pace.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:45:16 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61426'
+    'REDIRECT_URL' => '/theme/assets/plugins/pace/pace.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/pace/pace.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510316.49
+    'REQUEST_TIME' => 1656510316
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 16:45:16 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "theme/assets/plugins/slimscroll/jquery.slimscroll.min.js". in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('theme/assets/pl...', Array)
+#1 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2022-06-29 16:45:16 [127.0.0.1][-][0lco9nna9tlelacs83stl11he05sq26m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '0lco9nna9tlelacs83stl11he05sq26m'
+    '_csrf' => '3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://spmig/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=0lco9nna9tlelacs83stl11he05sq26m; _csrf=3e68f871e23de340c304d87f0cb5cd7484ac0b1f70c03a8059cbc75f0b78a810a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22do2SlvRuc_wLmMQ_xLO8OhTn6TFrJII_%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '61428'
+    'REDIRECT_URL' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/theme/assets/plugins/slimscroll/jquery.slimscroll.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656510316.49
+    'REQUEST_TIME' => 1656510316
+    'argv' => []
+    'argc' => 0
+]
+2022-06-29 17:05:18 [127.0.0.1][1][iios5bd108n9pqc7nsoa8epfqhcoqa85][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\OpenServer\domains\specavtomig\controllers\TechnicController.php:65
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(643): class_exists('app\\controllers...')
+#3 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('technic')
+#4 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('')
+#5 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('technic', Array)
+#6 D:\OpenServer\domains\specavtomig\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\OpenServer\domains\specavtomig\web\index.php(19): yii\base\Application->run()
+#8 {main}
+2022-06-29 17:05:17 [127.0.0.1][1][iios5bd108n9pqc7nsoa8epfqhcoqa85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'iios5bd108n9pqc7nsoa8epfqhcoqa85'
+    '_identity' => 'cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '37826854d93b662dd726a08a2c030f65004e9371741b2a74c9660378fde586d4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-3Kca0dwu1wBSoLYTsnsXHsmjN8T0olu\";}'
+    '_ga' => 'GA1.1.305088940.1656510322'
+    '_gid' => 'GA1.1.692181233.1656510322'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://spmig/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'spmig'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://spmig/bid'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=iios5bd108n9pqc7nsoa8epfqhcoqa85; _identity=cec24d4896cc0e02a2bedf92f57118193acb8de5f8b5add3a51155e53c243871a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=37826854d93b662dd726a08a2c030f65004e9371741b2a74c9660378fde586d4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-3Kca0dwu1wBSoLYTsnsXHsmjN8T0olu%22%3B%7D; _ga=GA1.1.305088940.1656510322; _gid=GA1.1.692181233.1656510322'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'spmig'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/specavtomig/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/specavtomig/web/index.php'
+    'REMOTE_PORT' => '65505'
+    'REDIRECT_URL' => '/technic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/technic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1656511517.917
+    'REQUEST_TIME' => 1656511517
+    'argv' => []
+    'argc' => 0
+]
